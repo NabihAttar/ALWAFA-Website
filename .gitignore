@@ -1,0 +1,28 @@
+# deps
+node_modules/
+
+# build outputs
+.next/
+out/
+dist/
+
+# env files
+.env*
+!.env.example
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# vercel
+.vercel/
+
+# editors/OS (optional)
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# (optional) if you compile CSS from SCSS and don't want it tracked
+# public/assets/css/
