@@ -57,11 +57,13 @@ const swiperOptions = {
 export default function Home() {
 
     
-    const bgImage = "assets/images/services/sericesBanner.png";
+    // const bgImage = "assets/images/services/sericesBanner.png";
 
     return (
         <>
-        <Layout headerStyle={1} footerStyle={2} breadcrumbTitle="Our services" bgImage={bgImage}>
+        <Layout headerStyle={1} footerStyle={2} breadcrumbTitle="Our services"
+        //  bgImage={bgImage}
+        >
         {/*Start Service One*/}
         <section className="service-one service-one--service" style={{ backgroundColor: "rgb(24, 35, 50)" }}>
             <div className="container" style={{ backgroundColor: "rgb(24, 35, 50)" }}>

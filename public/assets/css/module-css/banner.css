@@ -100,32 +100,32 @@ Banner One
 
 .banner-one__location-single.style1 {
     position: absolute;
-    top: 115px;
-    left: 40px;
+    top: 215px;
+    left: 580px;
 }
 
 .banner-one__location-single.style2 {
     position: absolute;
-    top: 60px;
-    left: 360px;
+    top: 240px;
+    left: 770px;
 }
 
 .banner-one__location-single.style3 {
     position: absolute;
-    top: 150px;
-    left: 570px;
+    top: 175px;
+    left: 520px;
 }
 
 .banner-one__location-single.style4 {
     position: absolute;
-    left: 315px;
-    bottom: 150px;
+    left: 515px;
+    top: 235px;
 }
 
 .banner-one__location-single.style5 {
     position: absolute;
-    left: 545px;
-    bottom: 145px;
+    left: 620px;
+    top: 245px;
 }
 
 .banner-one__location-single.style6 {

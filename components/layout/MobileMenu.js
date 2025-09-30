@@ -45,7 +45,7 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
 
           <div className="logo-box">
             <Link href="/" aria-label="logo image" onClick={handleNavClick}>
-              <img src={fixImagePath("resources/logo-1.png")} width="150" alt="Go Transport" />
+              <img src={fixImagePath("resources/logo.png")} width="150" alt="Go Transport" />
             </Link>
           </div>
 

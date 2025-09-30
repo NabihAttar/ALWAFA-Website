@@ -30,7 +30,7 @@ export default function Footer2() {
 
                             <div className="btn-box">
                                 <Link className="thm-btn" href="contact" style={{ color: "white" }}>Contact with Us
-                                    <i className="icon-right-arrow21"></i>
+                                    {/* <i className="icon-right-arrow21"></i> */}
                                     <span className="hover-btn hover-bx"></span>
                                     <span className="hover-btn hover-bx2"></span>
                                     <span className="hover-btn hover-bx3"></span>

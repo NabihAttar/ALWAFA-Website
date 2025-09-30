@@ -6394,6 +6394,7 @@ Small screens
   border-radius: 12px;
   padding: 24px;
   color: #fff;
+  
 }
 
 .package-card__header {
@@ -6411,6 +6412,38 @@ Small screens
   margin: 4px 0 0;
   font-size: 14px;
 }
+.package-progress .pp-label { color: rgba(255,255,255,0.6); }
+.pp-dot.is-done + .pp-label,
+.pp-dot.is-active + .pp-label { color: #fff; font-weight: 600; }
+
+
+:root { --bleed: 24px; } /* how far the dot sticks out */
+
+.package-progress{
+  position: relative;
+  margin-left: calc(-1 * var(--bleed));  /* extend outside */
+  padding-left: var(--bleed);            /* keep inner layout aligned */
+}
+
+/* your existing single-line background */
+.package-progress::before{
+  content:"";
+  position:absolute; left:0; right:0;
+  top: calc((var(--dot) - var(--line)) / 2);
+  height: var(--line);
+  border-radius: 999px;
+  background: linear-gradient(
+    to right,
+    var(--done) 0%,
+    var(--done) var(--progress),
+    var(--idle) var(--progress),
+    var(--idle) 100%
+  );
+  z-index:0;
+}
+
+/* dots should sit above */
+.pp-dot{ z-index:1; position:relative; }
 
 .status-btn {
   padding: 6px 14px;
@@ -6444,6 +6477,12 @@ Small screens
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.package-progress .line2 {
+  flex: 1;
+  height: 2px;
+  background: #cfd5d7;
+  margin: 10px 10px;
 }
 
 .package-progress .point {
@@ -6486,9 +6525,120 @@ Small screens
 }
 
 
+
+
+
+
+
+
+:root{
+  --dot: 28px;              /* dot size */
+  --line: 4px;              /* line thickness */
+  --done: #5fd4ff;          /* active/progress color */
+  --idle: #d3d9e2;          /* remaining track color */
+  --ring: #141a27;          /* dot ring */
+}
+
+/* container with one background line */
+.package-progress{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: var(--dot);                /* makes it easy to center the line */
+  margin: 20px 0 28px;
+}
+
+/* the continuous line behind dots */
+.package-progress::before{
+  content: "";
+  position: absolute;
+  left: 0; right: 0;
+  top: calc((var(--dot) - var(--line)) / 2);   /* passes through dot center */
+  height: var(--line);
+  border-radius: 999px;
+  /* color the completed part up to --progress, then idle */
+  background: linear-gradient(
+    to right,
+    var(--done) 0%,
+    var(--done) var(--progress),
+    var(--idle) var(--progress),
+    var(--idle) 100%
+  );
+  z-index: 0;
+}
+
+/* each step */
+.pp-item{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* the dots sit above the line so the line “penetrates” visually */
+.pp-dot{
+  position: relative;
+  z-index: 1;
+  width: var(--dot);
+  height: var(--dot);
+  border-radius: 50%;
+  background: var(--idle);           
+  border: 2px solid var(--ring);    
+}
+
+.pp-dot.is-done,
+.pp-dot.is-active{ background: var(--done); }
+
+.pp-dot.is-active{
+  box-shadow: 0 0 0 4px rgba(95,212,255,.25);
+}
+
+/* labels above dots */
+.pp-label{
+  position: absolute;
+  top: calc(-10px - var(--dot));     /* above the dot */
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font-size: 12px;
+  color: #141a27;
+  pointer-events: none;
+}
+
+
+/* let the left dot bleed if needed */
+.package-card { overflow: visible; }
+
+/* make the bar span edge-to-edge inside the card padding */
+.package-progress { margin-left: 10px; margin-right: 10px; padding: 0px 0px; }
+/* single line: already in your CSS; ensure perfect centering */
+.package-progress::before{
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* ends styling */
+.pp-dot.is-start { background: var(--done); }      /* big left active */
+.pp-dot.is-end   { width: 12px; height: 12px;      /* small right cap */
+                   background: var(--idle); opacity: .7; border: 0; }
+
+/* labels under the ends */
+.pp-label{
+  bottom: -22px; top: auto;                        /* move below the bar */
+  color: rgba(255,255,255,.7);
+  text-align: center;
+}
+.pp-label--start{ left: 0; transform: none; text-align: left; }
+.pp-label--end  { left: 100%; transform: translateX(-100%); text-align: right; }
+.pp-label em{ display:block; font-style:normal; font-size:10px; letter-spacing:.06em; opacity:.7; }
+.pp-label strong{ display:block; color:#fff; font-weight:600; }
+
 /* =========================
    Tracking History section
    ========================= */
+
+   
 .history-section {
   padding: 34px 0;
   background-color: #0b1324; /* same bg as package-section for continuity */
@@ -6520,15 +6670,20 @@ Small screens
 }
 
 /* The vertical line that runs through the dots */
-.timeline__line {
+.timeline__line{
   position: absolute;
-  left: 132px;                 /* aligns with middle column center */
-  top: 0;
-  bottom: 0;
-  width: 2px;
+  left: 156px;     /* 8 + 120 + 16 + 12 (center of 24px) */
+  transform: translateX(-50%);
+  width: 4px;      /* make thicker (use 6px if you want) */
+  top: 12px;       /* half of (20 + 2*2) */
+  bottom: 12px;    /* half of (20 + 2*2) */
   background: #2b3a52;
-  opacity: 0.9;
+  opacity: .9;
+  z-index: 0;
 }
+
+
+
 
 /* Each row is a 3-column grid: date | dot | content */
 .timeline__row {
@@ -6599,3 +6754,79 @@ Small screens
   .timeline__title { font-size: 13px; }
   .timeline__desc { font-size: 12px; }
 }
+
+
+/* tunables */
+:root{
+  --tl-date-col: 120px;   /* left column width */
+  --tl-track-col: 24px;   /* middle column width (matches dot total size) */
+  --tl-gap: 16px;         /* gap between columns */
+  --tl-pad: 0.5rem;       /* left padding on .timeline */
+  --tl-dot: 20px;         /* inner dot size (without border) */
+  --tl-ring: 2px;         /* dot border thickness */
+  --tl-line: 2px;         /* vertical line thickness */
+}
+
+/* Timeline layout */
+.timeline{
+  position: relative;
+  display: grid;
+  row-gap: 18px;
+  padding-left: var(--tl-pad);
+}
+
+/* The vertical line centered in the track column */
+.timeline__line{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: calc(
+    var(--tl-pad) +                /* padding-left on .timeline */
+    var(--tl-date-col) +           /* date column */
+    var(--tl-gap) +                /* gap */
+    (var(--tl-track-col) / 2)      /* center of track column */
+  );
+  transform: translateX(-50%);     /* align line center to that position */
+  width: var(--tl-line);
+  background: #2b3a52;
+  opacity: .9;
+  z-index: 0;                      /* behind dots */
+}
+
+/* Each row: date | track | content */
+.timeline__row{
+  display: grid;
+  grid-template-columns: var(--tl-date-col) var(--tl-track-col) 1fr;
+  column-gap: var(--tl-gap);
+  align-items: start;
+}
+
+
+
+.timeline__track{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.timeline__dot{
+  width: var(--tl-dot);
+  height: var(--tl-dot);
+  box-sizing: content-box;         /* keep border OUTSIDE dot size */
+  border: var(--tl-ring) solid #141a27;
+  border-radius: 50%;
+  background: #5fd4ff;
+  z-index: 1;
+}
+.timeline__dot--muted{ background:#5b6475; }
+
+/* Responsive: only change the variable(s), calc() handles the rest */
+@media (max-width: 640px){
+  :root{
+    --tl-date-col: 90px;           /* was 120px */
+    /* track col stays 24px (matches 20px dot + 2px ring each side) */
+  }
+}
+
