@@ -25,7 +25,7 @@ export default function About2() {
                         </div>
                         <div className="col-xl-6 col-lg-6">
                             <div className="project-details__text2-content">
-                                <h2 style={{ color: "white" }}>Key Objectives:</h2>
+                                <h2 style={{ color: "white" }}>Where We Operate</h2>
                                 <p style={{ color: "rgb(143, 143, 143)" }}>
                                     With headquarters near Rafic Hariri International Airport and warehousing hubs in different countries, GTT ensures smooth logistics across key international countries:
                                 </p>

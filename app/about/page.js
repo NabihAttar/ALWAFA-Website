@@ -161,7 +161,7 @@ export default function Home() {
                             </div>
                             <div className="col-xl-5 col-lg-6">
                                 <div className="about-one__img">
-                                    <div className="shape1 float-bob-y"><img src={fixImagePath("shapes/about-v1-shape1.png")} alt="" />
+                                    <div className="shape1 float-bob-y"><img src={fixImagePath("shapes/airplane-down-about.png")} alt="" />
                                     </div>
                                     <div className="shape2 float-bob-y"><img src={fixImagePath("shapes/points.png")} alt="" />
                                     </div>
@@ -175,7 +175,7 @@ export default function Home() {
                                         </div>
 
                                         <div className="shape3 float-bob-y">
-                                            <img src={fixImagePath("shapes/about-v1-shape3.png")} alt="" />
+                                            <img src={fixImagePath("shapes/airplane-up-about.png")} alt="" />
                                         </div>
                                     </div>
                                 </div>
