@@ -78,9 +78,8 @@ export default function Home() {
                                 </div>
 
                                 <div className="service-one__single-content" style={{ backgroundColor: 'rgb(15,28,37)', padding: '32px 24px'}}>
-                                    <h2 ><Link href="international-transport" style={{ color: '#fff' }}>Fast Personal Delivery </Link></h2>
-                                    <p style={{ color: 'rgb(142,142,142)' }}>A logistic service provider company plays
-                                        a pivotal role in the global supply chain logistic service.</p>
+                                    <h2 ><Link href="international-transport" style={{ color: '#fff' }}>Air & Land Freight </Link></h2>
+                                    <p style={{ color: 'rgb(142,142,142)' }}>Reliable import and export logistics across major transportation networks. From urgent air shipments to coordinated ground deliveries, we move your cargo with efficiency and care.</p>
                                     {/* Read More button removed as requested */}
                                 </div>
                             </div>
@@ -102,9 +101,8 @@ export default function Home() {
                                 </div>
 
                                 <div className="service-one__single-content" style={{ backgroundColor: 'rgb(15,28,37)', padding: '32px 24px'}}>
-                                    <h2 ><Link href="international-transport" style={{ color: '#fff' }}>Local Truck Transport</Link></h2>
-                                    <p style={{ color: 'rgb(142,142,142)' }}>A logistic service provider company plays
-                                        a pivotal role in the global supply chain logistic service.</p>
+                                    <h2 ><Link href="international-transport" style={{ color: '#fff' }}>Customs Clearance</Link></h2>
+                                    <p style={{ color: 'rgb(142,142,142)' }}>Swift, compliant clearance processes at Beirut's Airport and Port. Our in-house experts ensure smooth entry and exit with zero stress.</p>
                                     {/* Read More button removed from the seventh service card as requested */}
                                 </div>
                             </div>
@@ -126,9 +124,8 @@ export default function Home() {
                                 </div>
 
                                 <div className="service-one__single-content" style={{ backgroundColor: 'rgb(15,28,37)', padding: '32px 24px'}}>
-                                    <h2 ><Link href="international-transport" style={{ color: '#fff' }}>International Transport</Link></h2>
-                                    <p style={{ color: 'rgb(142,142,142)' }}>A logistic service provider company plays
-                                        a pivotal role in the global supply chain logistic service.</p>
+                                    <h2 ><Link href="international-transport" style={{ color: '#fff' }}>Door-to-Door (D2D) Shipping</Link></h2>
+                                    <p style={{ color: 'rgb(142,142,142)' }}>From your supplier's floor to your customer's door — we manage the journey end-to-end. Transparent, trackable, and tailored to your needs.</p>
                                     {/* Read More button removed from all service cards as requested */}
                                 </div>
                             </div>
@@ -150,9 +147,8 @@ export default function Home() {
                                 </div>
 
                                 <div className="service-one__single-content" style={{ backgroundColor: 'rgb(15,28,37)', padding: '32px 24px'}}>
-                                    <h2 ><Link href="international-transport" style={{ color: '#fff' }}>Safe Ocean Transport</Link></h2>
-                                    <p style={{ color: 'rgb(142,142,142)' }}>A logistic service provider company plays
-                                        a pivotal role in the global supply chain logistic service.</p>
+                                    <h2 ><Link href="international-transport" style={{ color: '#fff' }}>Cargo Insurance</Link></h2>
+                                    <p style={{ color: 'rgb(142,142,142)' }}>We protect your cargo in transit, offering insurance plans that provide peace of mind against unexpected disruptions.</p>
                                    
                                 </div>
                             </div>
@@ -174,9 +170,8 @@ export default function Home() {
                                 </div>
 
                                 <div className="service-one__single-content" style={{ backgroundColor: 'rgb(15,28,37)', padding: '32px 24px' }}>
-                                    <h2 ><Link href="international-transport" style={{ color: '#fff' }}>Warehouse Facility</Link></h2>
-                                    <p style={{ color: 'rgb(142,142,142)' }}>A logistic service provider company plays
-                                        a pivotal role in the global supply chain logistic service.</p>
+                                    <h2 ><Link href="international-transport" style={{ color: '#fff' }}>Warehousing Solutions</Link></h2>
+                                    <p style={{ color: 'rgb(142,142,142)' }}>Secure, accessible storage across key logistics hubs. Our global warehouse network supports inventory control and efficient distribution.</p>
                                     {/* Read More button removed from all service cards as requested */}
                                 </div>
                             </div>
@@ -198,9 +193,8 @@ export default function Home() {
                                 </div>
 
                                 <div className="service-one__single-content" style={{ backgroundColor: 'rgb(15,28,37)', padding: '32px 24px'}}>
-                                    <h2><Link href="international-transport" style={{ color: '#fff' }}>Emergency Transport</Link></h2>
-                                    <p style={{ color: 'rgb(142,142,142)' }}>A logistic service provider company plays
-                                        a pivotal role in the global supply chain logistic service.</p>
+                                    <h2><Link href="international-transport" style={{ color: '#fff' }}>Inland Trucking</Link></h2>
+                                    <p style={{ color: 'rgb(142,142,142)' }}>Fast, flexible ground transport across Lebanon and beyond. We bridge the gap between ports, warehouses, and final destinations.</p>
                                     {/* <div className="btn-box">
                                         <Link href="international-transport">Read More <span
                                                 className="icon-right-arrow21"></span></Link>
@@ -223,9 +217,8 @@ export default function Home() {
                                 </div>
 
                                 <div className="service-one__single-content" style={{ backgroundColor: 'rgb(15,28,37)', padding: '32px 24px'}}>
-                                    <h2><Link href="international-transport" style={{ color: '#fff' }}>Safe Ocean Transport</Link></h2>
-                                    <p style={{ color: 'rgb(142,142,142)' }}>A logistic service provider company plays
-                                        a pivotal role in the global supply chain logistic service.</p>
+                                    <h2><Link href="international-transport" style={{ color: '#fff' }}>Consulting & Logistics Outsourcing</Link></h2>
+                                    <p style={{ color: 'rgb(142,142,142)' }}>Let our logistics experts streamline your supply chain. From documentation to full-scale operations, we optimize your flow and reduce your costs.</p>
                                     {/* <div className="btn-box">
                                         <Link href="international-transport">Read More <span
                                                 className="icon-right-arrow21"></span></Link>

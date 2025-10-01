@@ -63,19 +63,19 @@ export default function Home() {
                                                         <div className="icon"><span className="icon-user"></span></div>
                                                     </div>
                                                 </div>
-                                                <div className="col-xl-6 col-lg-6 col-md-6">
+                                                {/* <div className="col-xl-6 col-lg-6 col-md-6">
                                                     <div className="input-box" style={{ backgroundColor: "white" }}>
                                                         <input type="email" name="email" placeholder="Email" required="" />
                                                         <div className="icon"><span className="icon-email"></span></div>
                                                     </div>
-                                                </div>
+                                                </div> */}
                                                 <div className="col-xl-6 col-lg-6 col-md-6">
                                                     <div className="input-box" style={{ backgroundColor: "white" }}>
                                                         <input type="text" name="Phone" placeholder="Phone" required="" />
                                                         <div className="icon"><span className="icon-phone2"></span></div>
                                                     </div>
                                                 </div>
-                                                <div className="col-xl-6 col-lg-6 col-md-6">
+                                                {/* <div className="col-xl-6 col-lg-6 col-md-6">
                                                     <div className="input-box">
                                                         <div className="select-box">
                                                             <select className="selectmenu wide">
@@ -88,7 +88,7 @@ export default function Home() {
                                                             </select>
                                                         </div>
                                                     </div>
-                                                </div>
+                                                </div> */}
 
 
                                                 <div className="col-xl-12" >

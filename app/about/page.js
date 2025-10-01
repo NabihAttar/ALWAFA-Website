@@ -136,18 +136,8 @@ export default function Home() {
 
 
                                     <div className="about-one__content-bottom">
-                                        {/* <div className="btn-box">
-                                    <Link className="thm-btn" href="about">More About Us
-                                        <i className="icon-right-arrow21"></i>
-                                        <span className="hover-btn hover-bx"></span>
-                                        <span className="hover-btn hover-bx2"></span>
-                                        <span className="hover-btn hover-bx3"></span>
-                                        <span className="hover-btn hover-bx4"></span>
-                                    </Link>
-                                </div> */}
-
-                                        <div className="contact-box">
-                                            <div className="icon">
+                                        <div className="contact-box ">
+                                            <div className="icon" style={{ color: '#000' }}>
                                                 <span className="icon-phone2"></span>
                                             </div>
 
@@ -181,13 +171,13 @@ export default function Home() {
                                 </div>
                             </div>
                             {/*End About One Content*/}
-                        
+
                         </div>
-                    </div> 
-                   
+                    </div>
+
                 </section>
-                         <About2 />    
-               
+                <About2 />
+
                 {/* <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="vfhzo499OeA" onClose={() => setOpen(false)} /> */}
             </Layout>
         </>

@@ -6,9 +6,9 @@ export default function Footer2() {
             
 
         {/*Start Footer Two*/}
-        <footer className="footer-one footer-one--two">
+        <footer className="footer-one footer-one--two" style={{ backgroundColor: "#161C25" }}>
             <div className="footer-one__pattern">
-                <img src="assets/images/pattern/footer-v1-pattern.png" alt="#"/>
+                {/* <img src="assets/images/pattern/footer-v1-pattern.png" alt="#"/> */}
             </div>
             <div className="shape3 float-bob-y">
                 <img src="assets/images/shapes/footer-v2-shape3.png" alt=""/>

@@ -28,11 +28,11 @@ const steps = ["Lebanon, Beirut", "In Transit", "China, City"];
       <section className="track-section">
         <div className="container">
           <div className="track-card">
-            <div className="track-card__head">
-              <span className="track-card__icon" aria-hidden="true">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
-                  <path d="M12 2l9 5v10l-9 5-9-5V7l9-5z" stroke="currentColor" strokeWidth="1.5" />
-                  <path d="M12 7l9 5M12 7L3 12M12 7v10" stroke="currentColor" strokeWidth="1.5" />
+            <div className="track-card__head" >
+              <span className="track-card__icon" aria-hidden="true" style={{ backgroundColor: "white" }}>
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none"  >
+                  <path d="M12 2l9 5v10l-9 5-9-5V7l9-5z" stroke="black" strokeWidth="1.5" />
+                  <path d="M12 7l9 5M12 7L3 12M12 7v10" stroke="black" strokeWidth="1.5" />
                 </svg>
               </span>
               <div>
@@ -72,7 +72,7 @@ const steps = ["Lebanon, Beirut", "In Transit", "China, City"];
               <button className="status-btn">Out for Delivery</button>
             </div>
 
-            <div className="package-card__grid">
+            <div className="package-card__grid" style={{  marginBottom: 86 }}>
               <div>
                 <p className="label">
                   <span className="icon ">
@@ -163,7 +163,9 @@ const steps = ["Lebanon, Beirut", "In Transit", "China, City"];
 </div> */}
 
 
-<div>
+
+
+<div >
   {/* <p style={{ color: 'rgba(255,255,255,.7)', marginBottom: 16 }}>Capacity Used</p> */}
 <TrackingProgress steps={steps} current={1} segment={0.9} /></div>
 
