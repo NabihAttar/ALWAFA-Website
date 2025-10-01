@@ -78,7 +78,7 @@ export default function Header1({ scroll, handlePopup, handleMobileMenu }) {
 
                                             <div className="main-header-one__bottom-right">
                                                 <div className="thm-btn">
-                                                    <Link href="about" style={{ color: "black" }}>
+                                                    <Link href="track" style={{ color: "black" }}>
                                                         Track Order <i className="icon-right-arrow21"></i>
                                                     </Link>
 

@@ -28,12 +28,14 @@ Banner() {
 
   return (
     <>
-      <section className="banner-one">
+      <section className="banner-one"
+       style={{
+    background: 'linear-gradient(to right, #0d131d, #253D60)',
+  }}
+  >
 <div
   className="banner-one__pattern"
-  style={{
-    background: 'linear-gradient(to right, #0d131d, #ffffffff)'
-  }}
+ 
 />
 
 
@@ -48,7 +50,7 @@ Banner() {
           <img className="float-bob-y" src="assets/images/banner/boxes.png" alt="#" />
         </div>
         <div className="shape1 rotate-me">
-          <img src="assets/images/shapes/airplane.png" alt="#" />
+          <img src="assets/images/shapes/Frame 17 (1).png" alt="#" />
         </div>
 
         <div className="container">

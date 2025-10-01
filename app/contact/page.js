@@ -3,9 +3,12 @@ import Layout from "@/components/layout/Layout"
 import Link from "next/link"
 export default function Home() {
 
+    const bgImage = "assets/images/contact/contactBanner.png";
+
+
     return (
         <>
-            <Layout headerStyle={1} footerStyle={2} breadcrumbTitle="Contact">
+            <Layout headerStyle={1} footerStyle={2} breadcrumbTitle="Contact" bgImage={bgImage}>
                 {/*Start Contact Page*/}
                 <section className="contact-page" style={{ backgroundColor: "rgb(15, 21, 30)" }}>
                     {/*Start Contact Page Top*/}

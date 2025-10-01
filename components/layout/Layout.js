@@ -222,7 +222,7 @@ export default function Layout({
         <SearchPopup isPopup={isPopup} handlePopup={handlePopup} />
 
         {/* Breadcrumb */}
-        {breadcrumbTitle && <Breadcrumb breadcrumbTitle={breadcrumbTitle}  />}
+        {breadcrumbTitle && <Breadcrumb breadcrumbTitle={breadcrumbTitle} bgImage={bgImage}/>}
 
         {/* Page Content */}
         {children}

@@ -6647,7 +6647,7 @@ Small screens
 .history-card {
   max-width: 960px;
   margin: 0 auto;
-  background: #141a27;
+  background: ##0F151E;
   border-radius: 12px;
   padding: 24px;
   color: #fff;
@@ -6830,3 +6830,88 @@ Small screens
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+:root{
+  --tp-dot: 24px;     /* dot (inner) size — make bigger if you want */
+  --tp-ring: 2px;     /* dot border thickness */
+  --tp-line: 4px;     /* track thickness */
+  --tp-done: #5fd4ff; /* progress color */
+  --tp-idle: #2b3a52; /* remaining track color */
+  --tp-ringc:#141a27; /* dark ring around dot */
+}
+
+/* container */
+.tp{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: calc(var(--tp-dot) + 2*var(--tp-ring));   /* helps center the line */
+  padding-bottom: 28px;                              /* room for labels */
+}
+
+/* one continuous line clamped to dot centers */
+.tp::before{
+  content:"";
+  position:absolute;
+  left:  calc((var(--tp-dot) + 2*var(--tp-ring)) / 2);
+  right: calc((var(--tp-dot) + 2*var(--tp-ring)) / 2);
+  top: 0%;
+  transform: translateY(-50%);
+  height: var(--tp-line);
+  border-radius: 999px;
+  background: linear-gradient(
+    to right,
+    var(--tp-done) 0%,
+    var(--tp-done) var(--progress),
+    var(--tp-idle) var(--progress),
+    var(--tp-idle) 100%
+  );
+  z-index: 0;
+}
+
+.tp-item{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 0;
+}
+
+/* dots sit above the line */
+.tp-dot{
+  position: relative;
+  z-index: 1;
+  width: var(--tp-dot);
+  height: var(--tp-dot);
+  box-sizing: content-box;                 /* border sits outside the dot size */
+  border: var(--tp-ring) solid var(--tp-ringc);
+  border-radius: 50%;
+  background: var(--tp-idle);
+}
+.tp-dot.is-done,
+.tp-dot.is-active{ background: var(--tp-done); }
+.tp-dot.is-active{ box-shadow: 0 0 0 4px rgba(95,212,255,.22); }
+
+/* end labels */
+.tp-label{
+  position: absolute;
+  top: calc(100% + 8px);
+  font-size: 12px;
+  line-height: 1.2;
+  color: rgba(255,255,255,.7);
+  white-space: nowrap;
+}
+.tp-label--start{ left: 0;   text-align: left;  transform: none; }
+.tp-label--end  { left: 100%; text-align: right; transform: translateX(-100%); }
+.tp-label em{ display:block; font-style:normal; font-size:10px; letter-spacing:.06em; opacity:.75; }
+.tp-label strong{ display:block; color:#fff; font-weight:600; }

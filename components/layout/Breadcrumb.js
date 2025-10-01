@@ -40,9 +40,9 @@ export default function Breadcrumb({ breadcrumbTitle, bgImage, patternSrc }) {
           backgroundPosition: "center",
         }}
       />
-      <div className="page-header__pattern">
+      {/* <div className="page-header__pattern">
         <img src={pattern} alt="" />
-      </div>
+      </div> */}
       <div className="container">
         <div className="page-header__inner">
           <h2>{breadcrumbTitle}</h2>

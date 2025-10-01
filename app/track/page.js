@@ -1,12 +1,13 @@
 "use client";
 
 import Layout from "@/components/layout/Layout";
+import TrackingProgress  from "@/components/TrackingProgress";
 
 export default function Track() {
   // define your progress data
-  const steps = ["Lebanon, Beirut", "Turkey, Port", "China, City"];
-  const current = 1; // 0=Lebanon, 1=Turkey, 2=China
-
+  // const steps = ["Lebanon, Beirut", "Turkey, Port","london", "China, City",];
+  // const current = 1; // 0=Lebanon, 1=Turkey, 2=China
+const steps = ["Lebanon, Beirut", "In Transit", "China, City"];
   const handleSubmit = (e) => {
     e.preventDefault();
     const value = e.currentTarget.elements.namedItem("tracking")?.value.trim();
@@ -14,8 +15,15 @@ export default function Track() {
     console.log("Tracking:", value);
   };
 
+    const bgImage = "assets/images/services/trackBanner.png";
+
+
   return (
-    <Layout headerStyle={1} footerStyle={2} breadcrumbTitle="Track Package">
+    <Layout headerStyle={1} footerStyle={2} breadcrumbTitle="Track Package" 
+    // bgImage={"/assets/images/services/sericesBanner.png"}
+             bgImage={bgImage}
+
+    >
       {/* Section 1: Tracking Form */}
       <section className="track-section">
         <div className="container">
@@ -68,7 +76,7 @@ export default function Track() {
               <div>
                 <p className="label">
                   <span className="icon ">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="white">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                       <path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/>
                     </svg>
                   </span>
@@ -80,7 +88,7 @@ export default function Track() {
               <div>
                 <p className="label">
                   <span className="icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="white">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                       <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/>
                     </svg>
                   </span>
@@ -92,7 +100,7 @@ export default function Track() {
               <div>
                 <p className="label">
                   <span className="icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="white">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                       <path d="M12 3a9 9 0 1 0 9 9A9 9 0 0 0 12 3zm0 16a7 7 0 1 1 7-7 7 7 0 0 1-7 7zm1-13h-2v6h6v-2h-4z"/>
                     </svg>
                   </span>
@@ -104,7 +112,7 @@ export default function Track() {
               <div>
                 <p className="label">
                   <span className="icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="white">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                       <path d="M20 8h-3V4H3v13h2a3 3 0 0 0 6 0h6a3 3 0 0 0 6 0h1v-5l-4-4zm-11 9a1 1 0 1 1-1-1 1 1 0 0 1 1 1zm10 0a1 1 0 1 1-1-1 1 1 0 0 1 1 1zm-2-7h2.586L20 12.586V14h-3z"/>
                     </svg>
                   </span>
@@ -116,7 +124,7 @@ export default function Track() {
               <div>
                 <p className="label">
                   <span className="icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="white">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                       <path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3-1 3 1v-1.5L13 19v-5.5z"/>
                     </svg>
                   </span>
@@ -128,7 +136,7 @@ export default function Track() {
               <div>
                 <p className="label">
                   <span className="icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="white">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                       <path d="M21 16V8a1 1 0 0 0-.553-.894l-8-4a1 1 0 0 0-.894 0l-8 4A1 1 0 0 0 3 8v8a1 1 0 0 0 .553.894l8 4a1 1 0 0 0 .894 0l8-4A1 1 0 0 0 21 16zm-9 3.382L6 16.118V9.882l6 3.264zm1-7.236l-6-3.264 6-3.264 6 3.264z"/>
                     </svg>
                   </span>
@@ -142,7 +150,7 @@ export default function Track() {
 
 
             
-         <div
+         {/* <div
   className="package-progress"
   style={{ "--progress": `${(steps.length > 1 ? (current / (steps.length - 1)) : 1) * 100}%` }}
 >
@@ -152,7 +160,13 @@ export default function Track() {
       <p className="pp-label">{label}</p>
     </div>
   ))}
-</div>
+</div> */}
+
+
+<div>
+  {/* <p style={{ color: 'rgba(255,255,255,.7)', marginBottom: 16 }}>Capacity Used</p> */}
+<TrackingProgress steps={steps} current={1} segment={0.9} /></div>
+
 
           </div>
         </div>
