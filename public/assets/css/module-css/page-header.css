@@ -24,7 +24,7 @@ Page Header
 }
 
 .page-header__bg::before {
-    position: absolute;
+    /* position: absolute; */
     top: 0;
     left: 0;
     right: 0;
