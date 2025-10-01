@@ -52,7 +52,7 @@ const steps = ["Lebanon, Beirut", "In Transit", "China, City"];
                   className="track-form__input"
                   autoComplete="off"
                 />
-                <button type="submit" className="track-form__btn">Search</button>
+                <button type="submit" className="track-form__btn" style={{color: "black"}}>Search</button>
               </div>
               <p className="track-form__hint">Supported formats: UPS, FedEx, DHL, USPS</p>
             </form>

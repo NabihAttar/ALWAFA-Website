@@ -6672,13 +6672,13 @@ Small screens
   row-gap: 18px;
   padding-left: 0.5rem;  /* breathing room on left */
 }
-
+  
 /* The vertical line that runs through the dots */
 .timeline__line{
   position: absolute;
   left: 156px;     /* 8 + 120 + 16 + 12 (center of 24px) */
   transform: translateX(-50%);
-  width: 14px;      /* make thicker (use 6px if you want) */
+  width: 4px;      /* make thicker (use 6px if you want) */
   top: 10px;       /* half of (20 + 2*2) */
   bottom: 10px;    /* half of (20 + 2*2) */
   background: #2b3a52;
