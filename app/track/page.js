@@ -183,38 +183,38 @@ const steps = ["Lebanon, Beirut", "In Transit", "China, City"];
             <div className="timeline">
               <div className="timeline__line" />
               <div className="timeline__row">
-                <div className="timeline__date"><span>Nov 8</span><span>10:37 AM</span></div>
+                <div className="timeline__date"><h6  style={{color: "white"}}>Nov 8</h6><h6  style={{color: "white"}}>10:37 AM</h6></div>
                 <div className="timeline__track"><span className="timeline__dot timeline__dot--muted" /></div>
                 <div className="timeline__content">
-                  <p className="timeline__title">Out for Delivery</p>
-                  <p className="timeline__desc">The parcel is on its way to you.</p>
+                  <h6 className="timeline__title">Out for Delivery</h6>
+                  <h6 className="timeline__desc">The parcel is on its way to you.</h6>
                 </div>
               </div>
 
               <div className="timeline__row">
-                <div className="timeline__date"><span>Nov 8</span><span>10:37 AM</span></div>
+                <div className="timeline__date"><h6  style={{color: "white"}}>Nov 8</h6><h6  style={{color: "white"}}>10:37 AM</h6></div>
                 <div className="timeline__track"><span className="timeline__dot" /></div>
                 <div className="timeline__content">
-                  <p className="timeline__title">In Transit</p>
-                  <p className="timeline__desc">Package arrived at facility.</p>
+                  <h6 className="timeline__title">In Transit</h6>
+                  <h6 className="timeline__desc">Package arrived at facility.</h6>
                 </div>
               </div>
 
               <div className="timeline__row">
-                <div className="timeline__date"><span>Nov 8</span><span>10:37 AM</span></div>
+                <div className="timeline__date"><h6  style={{color: "white"}}>Nov 8</h6><h6  style={{color: "white"}}>10:37 AM</h6></div>
                 <div className="timeline__track"><span className="timeline__dot" /></div>
                 <div className="timeline__content">
-                  <p className="timeline__title">In Transit</p>
-                  <p className="timeline__desc">Package in transit to destination.</p>
+                  <h6 className="timeline__title">In Transit</h6>
+                  <h6 className="timeline__desc">Package in transit to destination.</h6>
                 </div>
               </div>
 
               <div className="timeline__row">
-                <div className="timeline__date"><span>Nov 8</span><span>10:37 AM</span></div>
+                <div className="timeline__date"><h6  style={{color: "white"}}>Nov 8</h6><h6  style={{color: "white"}}>10:37 AM</h6></div>
                 <div className="timeline__track"><span className="timeline__dot" /></div>
                 <div className="timeline__content">
-                  <p className="timeline__title">Picked Up</p>
-                  <p className="timeline__desc">Package picked up from sender.</p>
+                  <h6 className="timeline__title">Picked Up</h6>
+                  <h6 className="timeline__desc">Package picked up from sender.</h6>
                 </div>
               </div>
             </div>
