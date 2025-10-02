@@ -6683,24 +6683,7 @@ Small screens
   padding-left: var(--tl-pad);
 }
 
-/* Vertical line centered in the track column */
-.timeline__line{
-  position: absolute;
-  top: 10px;
-  bottom: 10px;
-  left: calc(
-    var(--tl-pad) +
-    var(--tl-date-col) +
-    var(--tl-gap) +
-    (var(--tl-track-col) / 2)
-  );
-  transform: translateX(-50%);
-  width: var(--tl-line);
-  background: rgba(43,58,82,0.9); /* semi-transparent */
-  z-index: 0; /* behind dots */
-}
 
-/* Each row: date | track | content */
 .timeline__row{
   display: grid;
   grid-template-columns: var(--tl-date-col) var(--tl-track-col) 1fr;
@@ -6718,25 +6701,6 @@ Small screens
   font-size: 12px;
 }
 
-/* Track (middle) */
-.timeline__track{
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Dot */
-.timeline__dot{
-  width: var(--tl-dot);
-  height: var(--tl-dot);
-  box-sizing: content-box; /* keep border outside size */
-  border: var(--tl-ring) solid #141a27;
-  border-radius: 50%;
-  background: #5fd4ff;
-  z-index: 1;
-}
-.timeline__dot--muted{ background:#5b6475; }
 
 /* Content (right) */
 .timeline__content{ padding-bottom: 10px; }
@@ -6770,45 +6734,48 @@ Small screens
 }
 
 /* Mobile ≤ 480px: stack date above content, keep skinny track left */
+/* ≤ 480px — keep desktop layout, just shrink sizes */
 @media (max-width: 480px){
-  :root{
-    --tl-date-col: 0px;   /* remove dedicated date column */
-    --tl-track-col: 28px; /* narrow rail */
-    --tl-gap: 12px;
-    --tl-dot: 18px;
+  .timeline{
+    /* smaller values, same structure */
+    --tl-date-col: 96px;
+    --tl-track-col: 32px;
+    --tl-gap: 14px;
+    --tl-dot: 22px;
     --tl-ring: 2px;
     --tl-line: 2px;
-  }
-
-  .timeline{
     row-gap: 14px;
   }
 
+  /* still 3 columns: date | track | content */
   .timeline__row{
-    /* 2 columns: track | content */
-    grid-template-columns: var(--tl-track-col) 1fr;
+    grid-template-columns: var(--tl-date-col) var(--tl-track-col) 1fr;
     column-gap: var(--tl-gap);
   }
 
-  /* Reflow: date sits above content in the right column */
+  /* date stays on the left, right-aligned (like desktop) */
   .timeline__date{
-    grid-column: 2 / -1;
-    align-items: flex-start;  /* left align on mobile */
-    margin-bottom: 4px;
+    grid-column: 1;
+    align-items: flex-end;
+    margin-bottom: 0;
     font-size: 11px;
   }
-  .timeline__track{ grid-column: 1; }
-  .timeline__content{ grid-column: 2; }
 
-  /* Reposition the vertical line for 2-column layout */
+  .timeline__track{ grid-column: 2; }
+  .timeline__content{ grid-column: 3; }
+
+  /* vertical line uses the SAME desktop formula */
   .timeline__line{
     left: calc(
       var(--tl-pad) +
+      var(--tl-date-col) +
+      var(--tl-gap) +
       (var(--tl-track-col) / 2)
     );
     transform: translateX(-50%);
   }
 }
+
 
 /* Optional: reduce motion users */
 @media (prefers-reduced-motion: reduce){
@@ -6828,6 +6795,90 @@ Small screens
 
 
 
+
+
+/* theme tokens */
+:root {
+  --tp-active: #3b82f6;  
+  --tp-muted:  #475569;  
+  --tp-bg:     #364153;   
+}
+
+/* timeline layout you already have — keep sizes the same */
+/* .timeline {
+  position: relative;
+  --tl-line: 12px;      
+  --tl-pad: 8px;
+  --tl-date-col: 120px;
+  --tl-gap: 16px;
+  --tl-track-col: 24px;
+} */
+
+/* keep your absolute positioning; only color is dynamic */
+.timeline__line{
+  position: absolute;
+  left: calc(
+    var(--tl-pad) +
+    var(--tl-date-col) +
+    var(--tl-gap) +
+    (var(--tl-track-col) / 2)
+  );
+  transform: translateX(-50%);
+  width: var(--tl-line);
+  top: 10px;
+  bottom: 27px;
+  border-radius: 999px;
+  /* color changes with --progress (0%..100%) */
+  background: linear-gradient(
+    to bottom,
+    #89F2FF 0%,
+    #89F2FF var(--progress),
+    var(--tp-muted) var(--progress),
+    var(--tp-muted) 100%
+  );
+  opacity: .95;
+  z-index: 0;
+}
+
+/* track cell */
+.timeline__track{
+  width: var(--tl-track-col);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* dot keeps same size; only color/state changes */
+.timeline__dot{
+  width: 20px;
+  height: 20px;
+  border-radius: 999px;
+  border: 3px solid var(--tp-bg); /* keep your current ring */
+  background: var(--tp-muted);
+  transition: background-color .25s ease, box-shadow .25s ease, transform .2s ease;
+}
+
+/* states driven from the same segment value */
+.timeline__dot.is-complete{
+   background: #89F2FF
+}
+
+.timeline__dot.is-active{
+  background: #89F2FF;
+  /* subtle focus halo; keeps shape unchanged */
+box-shadow: 0 0 0 4px color-mix(in srgb, #89F2FF 30%, transparent);
+}
+
+.timeline__dot.is-future{
+background: #364153 !important;
+  opacity: .7; /* optional; remove if you want exact same appearance */
+}
+
+/* (optional) smooth animate when segment changes */
+.history-section{
+  transition: --progress .3s ease;
+}
 
 
 

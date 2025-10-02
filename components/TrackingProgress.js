@@ -8,7 +8,9 @@ export default function TrackingProgress({
   className = '',
 }) {
   const seg = Math.min(Math.max(Number(segment) || 0, 0), 1); // clamp 0..1
-  const pct = seg * 100;                                      // 0..100 only from segment
+  const pct = seg * 100;   
+  
+ 
 
   return (
     <div className={`tp ${className}`} style={{ ['--progress']: `${pct}%` }}>
