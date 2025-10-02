@@ -6640,10 +6640,10 @@ Small screens
    Tracking History section
    ========================= */
 
-   
+   /* ===== History Card ===== */
 .history-section {
   padding: 34px 0;
-  background-color: #0F151E; /* same bg as package-section for continuity */
+  background-color: #0F151E;
 }
 
 .history-card {
@@ -6654,128 +6654,28 @@ Small screens
   padding: 37px;
   color: #fff;
   box-shadow: 0 8px 24px rgba(0,0,0,0.25);
-    border: 1px solid rgba(255,255,255,0.08);
-
+  border: 1px solid rgba(255,255,255,0.08);
 }
 
 .history-card__title {
   margin: 0 0 16px 0;
   font-size: 18px;
   font-weight: 700;
-  color : white
+  color: #fff;
 }
 
-/* Timeline layout */
-.timeline {
-  position: relative;
-  display: grid;
-  row-gap: 18px;
-  padding-left: 0.5rem;  /* breathing room on left */
-}
-  
-/* The vertical line that runs through the dots */
-.timeline__line{
-  position: absolute;
-  left: 156px;     /* 8 + 120 + 16 + 12 (center of 24px) */
-  transform: translateX(-50%);
-  width: 4px;      /* make thicker (use 6px if you want) */
-  top: 10px;       /* half of (20 + 2*2) */
-  bottom: 10px;    /* half of (20 + 2*2) */
-  background: #2b3a52;
-  opacity: .9;
-  z-index: 0;
-}
-
-
-.contact-box .icon,
-.contact-box .icon .icon-phone2,
-.contact-box .icon .icon-phone2::before{
-  color: #000 !important; /* force black */
-}
-
-/* Each row is a 3-column grid: date | dot | content */
-.timeline__row {
-  display: grid;
-  grid-template-columns: 120px 24px 1fr; 
-  column-gap: 16px;
-  align-items: start;
-}
-
-/* Date (left column) */
-.timeline__date {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;     
-  gap: 2px;
-  color: rgba(255,255,255,0.7);
-  font-size: 12px;
-}
-
-/* Track (middle column) */
-.timeline__track {
-  position: relative;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;    /* center the dot horizontally */
-}
-
-/* The dot */
-.timeline__dot {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: #5fd4ff;        /* cyan active */
-  border: 2px solid #141a27;  /* ring to separate from line */
-  z-index: 1;
-}
-
-.timeline__dot--muted {
-  background: #5b6475;        /* grey (e.g., current step at top) */
-}
-
-/* Content (right column) */
-.timeline__content {
-  padding-bottom: 10px;        /* small space between items */
-}
-
-.timeline__title {
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  color: #ffffff;
-}
-
-.timeline__desc {
-  margin: 4px 0 0 0;
-  font-size: 13px;
-  color: rgba(255,255,255,0.8);
-}
-
-/* Responsive */
-@media (max-width: 640px) {
-  .timeline__row {
-    grid-template-columns: 90px 24px 1fr;
-  }
-  .timeline__line { left: 102px; }
-  .timeline__date { font-size: 11px; }
-  .timeline__title { font-size: 13px; }
-  .timeline__desc { font-size: 12px; }
-}
-
-
-/* tunables */
+/* ===== Tunables (Desktop defaults) ===== */
 :root{
   --tl-date-col: 120px;   /* left column width */
-  --tl-track-col: 54px;   /* middle column width (matches dot total size) */
+  --tl-track-col: 54px;   /* middle column width */
   --tl-gap: 25px;         /* gap between columns */
   --tl-pad: 0.5rem;       /* left padding on .timeline */
-  --tl-dot: 54px;         /* inner dot size (without border) */
+  --tl-dot: 54px;         /* dot size (inner) */
   --tl-ring: 2px;         /* dot border thickness */
   --tl-line: 2px;         /* vertical line thickness */
 }
 
-/* Timeline layout */
+/* ===== Timeline Base ===== */
 .timeline{
   position: relative;
   display: grid;
@@ -6783,22 +6683,21 @@ Small screens
   padding-left: var(--tl-pad);
 }
 
-/* The vertical line centered in the track column */
+/* Vertical line centered in the track column */
 .timeline__line{
   position: absolute;
-  top: 0;
-  bottom: 0;
+  top: 10px;
+  bottom: 10px;
   left: calc(
-    var(--tl-pad) +               
-    var(--tl-date-col) +           
-    var(--tl-gap) +               
-    (var(--tl-track-col) / 2)     
+    var(--tl-pad) +
+    var(--tl-date-col) +
+    var(--tl-gap) +
+    (var(--tl-track-col) / 2)
   );
-  /* transform: translateX(-50%);     /* align line center to that position */
-  /* width: var(--tl-line);
-  background: #2b3a52;
-  opacity: .9;
-  z-index: 0;                      behind dots */ */
+  transform: translateX(-50%);
+  width: var(--tl-line);
+  background: rgba(43,58,82,0.9); /* semi-transparent */
+  z-index: 0; /* behind dots */
 }
 
 /* Each row: date | track | content */
@@ -6809,8 +6708,17 @@ Small screens
   align-items: start;
 }
 
+/* Date (left column) */
+.timeline__date{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+  color: rgba(255,255,255,0.7);
+  font-size: 12px;
+}
 
-
+/* Track (middle) */
 .timeline__track{
   position: relative;
   display: flex;
@@ -6818,17 +6726,94 @@ Small screens
   justify-content: center;
 }
 
-
+/* Dot */
 .timeline__dot{
   width: var(--tl-dot);
   height: var(--tl-dot);
-  box-sizing: content-box;         /* keep border OUTSIDE dot size */
+  box-sizing: content-box; /* keep border outside size */
   border: var(--tl-ring) solid #141a27;
   border-radius: 50%;
   background: #5fd4ff;
   z-index: 1;
 }
 .timeline__dot--muted{ background:#5b6475; }
+
+/* Content (right) */
+.timeline__content{ padding-bottom: 10px; }
+.timeline__title{
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+}
+.timeline__desc{
+  margin: 4px 0 0 0;
+  font-size: 13px;
+  color: rgba(255,255,255,0.8);
+}
+
+/* ===== Responsive ===== */
+
+/* Tablet ≤ 768px: shrink columns & elements */
+@media (max-width: 768px){
+  :root{
+    --tl-date-col: 88px;
+    --tl-track-col: 36px;
+    --tl-gap: 18px;
+    --tl-dot: 28px;
+    --tl-ring: 2px;
+    --tl-line: 2px;
+  }
+  .timeline__date{ font-size: 11px; }
+  .timeline__title{ font-size: 13px; }
+  .timeline__desc{ font-size: 12px; }
+}
+
+/* Mobile ≤ 480px: stack date above content, keep skinny track left */
+@media (max-width: 480px){
+  :root{
+    --tl-date-col: 0px;   /* remove dedicated date column */
+    --tl-track-col: 28px; /* narrow rail */
+    --tl-gap: 12px;
+    --tl-dot: 18px;
+    --tl-ring: 2px;
+    --tl-line: 2px;
+  }
+
+  .timeline{
+    row-gap: 14px;
+  }
+
+  .timeline__row{
+    /* 2 columns: track | content */
+    grid-template-columns: var(--tl-track-col) 1fr;
+    column-gap: var(--tl-gap);
+  }
+
+  /* Reflow: date sits above content in the right column */
+  .timeline__date{
+    grid-column: 2 / -1;
+    align-items: flex-start;  /* left align on mobile */
+    margin-bottom: 4px;
+    font-size: 11px;
+  }
+  .timeline__track{ grid-column: 1; }
+  .timeline__content{ grid-column: 2; }
+
+  /* Reposition the vertical line for 2-column layout */
+  .timeline__line{
+    left: calc(
+      var(--tl-pad) +
+      (var(--tl-track-col) / 2)
+    );
+    transform: translateX(-50%);
+  }
+}
+
+/* Optional: reduce motion users */
+@media (prefers-reduced-motion: reduce){
+  .timeline__dot{ transition: none; }
+}
 
 /* Responsive: only change the variable(s), calc() handles the rest */
 @media (max-width: 640px){
