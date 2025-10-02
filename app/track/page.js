@@ -14,15 +14,14 @@ export default function Track() {
     { date: 'Nov 8', time: '10:37 AM', title: 'In Transit', desc: 'Package arrived at facility.' },
     { date: 'Nov 8', time: '10:37 AM', title: 'In Transit', desc: 'Package in transit to destination.' },
     { date: 'Nov 8', time: '10:37 AM', title: 'Picked Up', desc: 'Package picked up from sender.' },
-        { date: 'Nov 8', time: '10:37 AM', title: 'Picked Up', desc: 'Package picked up from sender.' },
+    { date: 'Nov 8', time: '10:37 AM', title: 'Picked Up', desc: 'Package picked up from sender.' },
 
   ];
 
-  // 0..100 only from segment
 
 
   const current = 1;
-  const segment = 1;
+  const segment = 0.5;
   const handleSubmit = (e) => {
     e.preventDefault();
     const value = e.currentTarget.elements.namedItem("tracking")?.value.trim();
@@ -181,11 +180,11 @@ export default function Track() {
 
 
             <div >
-              <TrackingProgress steps={steps} current={1} segment={0.8} /></div>
+              <TrackingProgress steps={steps} current={1} segment={segment} /></div>
           </div>
         </div>
       </section>
-      <TrackingHistory rows={rows} segment={0.8} />
+      <TrackingHistory rows={rows} segment={segment} />
       {/* Section 3: Tracking History */}
       {/* <section className="history-section">
         <div className="container">
