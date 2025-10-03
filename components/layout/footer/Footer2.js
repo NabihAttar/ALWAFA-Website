@@ -71,8 +71,8 @@ export default function Footer2() {
                                         </li>
                                         <li><Link href="contact"><span className="icon-right-arrow1"></span> Contact
                                                 </Link></li>
-                                        <li><Link href="track"><span className="icon-right-arrow1"></span> Track Order
-                                                </Link></li>
+                                        {/* <li><Link href="track"><span className="icon-right-arrow1"></span> Track Order
+                                                </Link></li> */}
                                     </ul>
                                 </div>
                             </div>

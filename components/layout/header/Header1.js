@@ -77,12 +77,12 @@ export default function Header1({ scroll, handlePopup, handleMobileMenu }) {
                                             </div>
 
                                             <div className="main-header-one__bottom-right">
-                                                <div className="thm-btn">
+                                                {/* <div className="thm-btn">
                                                     <Link href="track" style={{ color: "black" }}>
                                                         Track Order <i className="icon-right-arrow21"></i>
                                                     </Link>
 
-                                                </div>
+                                                </div> */}
 
                                                 {/* <div className="login-box">
                                                 <Link href="#"><i className="fa fa-sign-in"></i> <span>Member <br/>
