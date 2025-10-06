@@ -28,8 +28,8 @@ export default function Footer2() {
                                 <h2>Efficient, Safe, & Swift Logistics Solution!</h2>
                             </div>
 
-                            <div className="btn-box">
-                                <Link className="thm-btn" href="contact" style={{ color: "white" }}>Contact with Us
+                            <div className="why-choose-one__form-btn" >
+                                <Link className="thm-btn" href="contact" style={{ color: "white", backgroundColor:"#141a27" }}>Contact with Us
                                     {/* <i className="icon-right-arrow21"></i> */}
                                     <span className="hover-btn hover-bx"></span>
                                     <span className="hover-btn hover-bx2"></span>
