@@ -30,23 +30,21 @@ export default function Home() {
                                                     <span className="icon-plane2 float-bob-x3"></span>
                                                 </div>
                                             </div>
-                                            <h2 className="sec-title__title tg-element-title"style={{ color: "white" }}>Get in Touch And We’ll <br /> Help Your
-                                                Business
+                                            <h2 className="sec-title__title tg-element-title"style={{ color: "white" }}>Let’s Move Your  <br /> Business Forward
+                                                
                                             </h2>
                                         </div>
 
                                         <div className="contact-page__top-content-text1" style={{ color: "rgb(143, 143, 143)" }}>
-                                            <p>Our dedicated team of experts is here to guide you through every step of the
-                                                insurance journey, ensuring you make informed choices tailored to your uniq
-                                                needs choices tailored to your unique needs. </p>
+                                            <p>Our team is here to support you with reliable, responsive service. Whether you have a question, need a quote, or want to discuss your logistics needs, we’re ready to help.</p>
                                         </div>
 
-                                        <div className="social-links" >
+                                        {/* <div className="social-links" >
                                             <Link href="#" style={{ backgroundColor: "white" }}><span className="icon-facebook-f" ></span></Link>
                                             <Link href="#" style={{ backgroundColor: "white" }}><span className="icon-instagram"></span></Link>
                                             <Link href="#" style={{ backgroundColor: "white" }}><span className="icon-twitter"></span></Link>
                                             <Link href="#" style={{ backgroundColor: "white" }}><span className="icon-linkedin"></span></Link>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </div>
                                 {/*End Contact Page Top Content*/}
@@ -58,7 +56,7 @@ export default function Home() {
                                             action="assets/inc/sendemail.php" method="post" >
                                             <div className="row">
                                                 <div className="col-xl-6 col-lg-6 col-md-6">
-                                                    <div className="input-box" style={{ backgroundColor: "white" }}>
+                                                    <div className="input-box" style={{ backgroundColor: "white", borderRadius: "3px" }}>
                                                         <input type="text" name="name" placeholder="Name" required="" />
                                                         <div className="icon"><span className="icon-user"></span></div>
                                                     </div>
@@ -70,7 +68,7 @@ export default function Home() {
                                                     </div>
                                                 </div> */}
                                                 <div className="col-xl-6 col-lg-6 col-md-6">
-                                                    <div className="input-box" style={{ backgroundColor: "white" }}>
+                                                    <div className="input-box" style={{ backgroundColor: "white", borderRadius: "3px" }}>
                                                         <input type="text" name="Phone" placeholder="Phone" required="" />
                                                         <div className="icon"><span className="icon-phone2"></span></div>
                                                     </div>
@@ -92,7 +90,7 @@ export default function Home() {
 
 
                                                 <div className="col-xl-12" >
-                                                    <div className="input-box" style={{ backgroundColor: "white" }}>
+                                                    <div className="input-box" style={{ backgroundColor: "white", borderRadius: "3px" }}>
                                                         <textarea name="message" placeholder="Message"></textarea>
                                                         <div className="icon style2"><span className="icon-pen"></span></div>
                                                     </div>

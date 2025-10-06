@@ -42,7 +42,7 @@ export default function Header1({ scroll, handlePopup, handleMobileMenu }) {
                                             </div>
                                         </div>
 
-                                        <div className="main-header-one__top-right">
+                                        {/* <div className="main-header-one__top-right">
                                             <div className="header-social-links">
                                                 <Link href="#"><span className="icon-facebook-f"></span></Link>
                                                 <Link href="#"><span className="icon-twitter1"></span></Link>
@@ -54,7 +54,7 @@ export default function Header1({ scroll, handlePopup, handleMobileMenu }) {
                                                 <Link href="#" className="main-menu__search search-toggler" onClick={handlePopup}>Search
                                                     <i className="icon-search"></i></Link>
                                             </div>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </div>
 

@@ -79,6 +79,7 @@ Service One
     margin-left: 30px;
     padding: 33px 40px 32px;
     z-index: 5;
+    height: 250px;
 }
 
 .service-one__single-content::before {
@@ -87,7 +88,7 @@ Service One
     right: 0;
     bottom: 0;
     width: 5px;
-    background: var(--logistiq-black);
+    background: #6f98bc;
     content: "";
 }
 
@@ -133,6 +134,7 @@ Service One
 .service-one__single-content p {
     font-size: 16px;
     margin: 0;
+    padding-right: 30px;
 }
 
 .service-one__single-content .btn-box {
@@ -171,7 +173,7 @@ Service One
     justify-content: center;
     width: 80px;
     height: 80px;
-    background: var(--logistiq-black);
+    background: #6f98bc;
     transition: all 200ms linear;
     transition-delay: 0.1s;
     z-index: 5;
@@ -885,3 +887,6 @@ Service Details
     transform: scaleY(1);
     display: block;
 }
+
+
+

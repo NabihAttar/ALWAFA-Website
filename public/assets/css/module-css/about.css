@@ -144,6 +144,7 @@ About One
     color: var(--logistiq-base);
     font-size: 15px;
     line-height: 15px;
+    color : #000;
 }
 
 .about-one__content-bottom .contact-box .text-box {

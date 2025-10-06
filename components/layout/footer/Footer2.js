@@ -100,7 +100,7 @@ export default function Footer2() {
                                                 </div>
                                                 <div className="text-box">
                                                     <p><Link href="mailto:yourmail@email.com">gotransport@gmail.com</Link></p>
-                                                    <p><Link href="mailto:yourmail@email.com">gotransport@gmail.com</Link></p>
+                                                    {/* <p><Link href="mailto:yourmail@email.com">gotransport@gmail.com</Link></p> */}
                                                 </div>
                                             </li>
 
@@ -158,10 +158,10 @@ export default function Footer2() {
 
                     <div className="footer-one__bottom-inner">
                         <div className="footer-one__bottom-text">
-                            <p>© Copyright 2025 <Link href="/">Go Transport.</Link> </p>
+                            <p>© Copyright 2025 <Link href="/">Go Transport & Transit.</Link> </p>
                         </div>
 
-                        <div className="footer-one__social-links">
+                        {/* <div className="footer-one__social-links">
                             <ul>
                                 <li>
                                     <Link href="#"><span className="icon-facebook-f"></span></Link>
@@ -178,7 +178,7 @@ export default function Footer2() {
                                     <Link href="#"><span className="icon-linkedin"></span></Link>
                                 </li>
                             </ul>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

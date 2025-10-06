@@ -137,12 +137,12 @@ export default function Home() {
 
                                     <div className="about-one__content-bottom">
                                         <div className="contact-box ">
-                                            <div className="icon" style={{ color: '#000' }}>
+                                            <div className="icon" >
                                                 <span className="icon-phone2"></span>
                                             </div>
 
                                             <div className="text-box" >
-                                                <p style={{ color: "white" }}>Make A Phone Call</p>
+                                                <p style={{ color: "#89f2ff" }}>Make A Phone Call</p>
                                                 <h4><Link href="tel:+96181411411" style={{ color: "white" }}>+961 81 411 411</Link></h4>
                                             </div>
                                         </div>
