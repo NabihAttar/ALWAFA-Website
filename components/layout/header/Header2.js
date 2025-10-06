@@ -106,7 +106,7 @@ export default function Header2({ scroll, handlePopup, handleSidebar, handleMobi
                                                 </Link>
                                             </div>
 
-                                            <div className="btn-box">
+                                            {/* <div className="btn-box">
                                                 <Link className="thm-btn" href="contact">Track Order
                                                     <i className="icon-right-arrow21"></i>
                                                     <span className="hover-btn hover-bx"></span>
@@ -114,7 +114,7 @@ export default function Header2({ scroll, handlePopup, handleSidebar, handleMobi
                                                     <span className="hover-btn hover-bx3"></span>
                                                     <span className="hover-btn hover-bx4"></span>
                                                 </Link>
-                                            </div>
+                                            </div> */}
                                         </div>
                                     </div>
                                 </div>

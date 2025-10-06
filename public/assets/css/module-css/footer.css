@@ -465,6 +465,7 @@ Footer Two
     clip-path: polygon(0 0, 100% 0%, 94% 100%, 0% 100%);
     content: "";
     z-index: -1;
+    background-color: #6f98bc;
 }
 
 .footer-one--two__cta-inner {

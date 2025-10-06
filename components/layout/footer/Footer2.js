@@ -14,9 +14,9 @@ export default function Footer2() {
                 <img src="assets/images/shapes/footer-v2-shape3.png" alt=""/>
             </div>
             <div className="footer-one__top">
-                <div className="container">
+                <div className="container" >
 
-                    <div className="footer-one--two__cta">
+                    <div className="footer-one--two__cta" >
                         <div className="shape1">
                             <img className="float-bob-x3" src="assets/images/shapes/footer-v2-shape2.png" alt=""/>
                         </div>
@@ -25,7 +25,7 @@ export default function Footer2() {
                         </div>
                         <div className="footer-one--two__cta-inner">
                             <div className="text-box">
-                                <h2>Efficient, Safe, & Swift Logistics Solution!</h2>
+                                <h2 style={{color: "#"}}>Efficient, Safe, & Swift Logistics Solution!</h2>
                             </div>
 
                             <div className="why-choose-one__form-btn" >

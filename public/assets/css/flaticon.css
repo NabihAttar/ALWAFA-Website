@@ -147,6 +147,7 @@
 
 .icon-address:before {
   content: "\e91c";
+  color: #6f98bc;
 }
 
 .icon-arrow-right-circle:before {
@@ -172,6 +173,7 @@
 
 .icon-clock2:before {
   content: "\e922";
+  color: #6f98bc;
 }
 
 .icon-down-arrowe:before {
@@ -196,6 +198,7 @@
 
 .icon-email:before {
   content: "\e928";
+  color: #6f98bc;
 }
 
 .icon-facebook-f:before {
@@ -232,6 +235,7 @@
 
 .icon-phone:before {
   content: "\e931";
+  color: #6f98bc;
 }
 
 .icon-phone2:before {

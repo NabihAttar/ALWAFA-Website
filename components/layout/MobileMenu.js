@@ -43,7 +43,7 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
             <i className="fa fa-times" />
           </button>
 
-          <div className="logo-box">
+          <div className="logo-box" >
             <Link href="/" aria-label="logo image" onClick={handleNavClick}>
               <img src={fixImagePath("resources/logo.png")} width="150" alt="Go Transport" />
             </Link>

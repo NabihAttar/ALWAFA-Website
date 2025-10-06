@@ -1189,6 +1189,7 @@ animation: spinner 1s infinite linear;
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 10% 100%);
   content: "";
   z-index: -1;
+  background-color: #6f98bc;
 }
 
 .header-social-links {
@@ -1296,6 +1297,7 @@ animation: spinner 1s infinite linear;
   clip-path: polygon(0 0, 100% 0%, 87% 100%, 0% 100%);
   z-index: -1;
   content: "";
+  background-color: #6f98bc;
 }
 
 .main-header-one__bottom-left .logo-box a {
@@ -1724,6 +1726,7 @@ animation: spinner 1s infinite linear;
 .stricky-header--style1 .main-header-one__bottom-left .logo-box::before {
   top: -24px;
   bottom: -24px;
+  background-color: #6f98bc;
 }
 
 

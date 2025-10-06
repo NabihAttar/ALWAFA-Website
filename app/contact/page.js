@@ -154,7 +154,7 @@ export default function Home() {
                                             <h2>Email</h2>
                                             <p>
                                                 <Link href="mailto:gotransport@gmail.com">gotransport@gmail.com</Link> <br />
-                                                <Link href="mailto:gotransport@gmail.com">gotransport@gmail.com</Link>
+                                                {/* <Link href="mailto:gotransport@gmail.com">gotransport@gmail.com</Link> */}
                                             </p>
                                         </div>
                                     </li>
@@ -167,7 +167,7 @@ export default function Home() {
                                             <h2>Phones</h2>
                                             <p>
                                                 <Link href="tel:+96181411411">+961 81 411 411</Link> <br />
-                                                <Link href="tel:+96181411411">+961 81 411 411</Link>
+                                                {/* <Link href="tel:+96181411411">+961 81 411 411</Link> */}
                                             </p>
                                         </div>
                                     </li>

@@ -62,8 +62,8 @@ export default function Header1({ scroll, handlePopup, handleMobileMenu }) {
                                     <div className="main-menu__wrapper-inner">
                                         <div className="main-header-one__bottom-inner" >
                                             <div className="main-header-one__bottom-left">
-                                                <div className="logo-box">
-                                                    <Link href="/"><img src={fixImagePath("resources/headerLogo (2).png")}
+                                                <div className="logo-box"  >
+                                                    <Link href="/" ><img src={fixImagePath("resources/headerLogo (2).png")}
                                                         alt="" /></Link>
                                                 </div>
 
@@ -120,18 +120,18 @@ export default function Header1({ scroll, handlePopup, handleMobileMenu }) {
                                     </div>
                                 </div>
 
-                                <div className="main-header-one__bottom-right">
+                                {/* <div className="main-header-one__bottom-right">
                                     <div className="thm-btn">
                                         <Link href="about" style={{ color: "black" }}>Track Order
                                             <i className="icon-right-arrow21"></i>
                                         </Link>
                                     </div>
 
-                                    {/* <div className="login-box">
+                                    <div className="login-box">
                                         <Link href="#"><i className="fa fa-sign-in"></i> <span>Member <br />
                                             Login</span> </Link>
-                                    </div> */}
-                                </div>
+                                    </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>
