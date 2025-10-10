@@ -36,7 +36,7 @@ export default function Home() {
                 <Team />
                 <Blog />
                 <Brands /> */}
-                <Testimonial />
+                {/* <Testimonial /> */}
             </Layout>
         </div>
     )

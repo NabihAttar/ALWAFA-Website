@@ -34,7 +34,8 @@ export default function Home() {
                 <Funfacts />
                 <Team />
                 <Blog />
-                <Brands /> */} <WhyChooseUs /><Faq />
+                <Brands /> */} 
+                {/* <WhyChooseUs /><Faq /> */}
             </Layout>
         </div>
     )

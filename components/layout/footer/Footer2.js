@@ -49,10 +49,10 @@ export default function Footer2() {
                             <div className="col-auto col-md-6 wow fadeInUp" data-wow-delay="100ms">
                                 <div className="footer-widget__single footer-one__about">
                                     <div className="footer-one__about-logo">
-                                        <Link href="/"><img src="assets/images/alwafaExportLogo/alwafa export group 4.svg"
+                                        <Link href="/"><img src="assets/images/alwafaExportLogo/footerlogo.png"
                                          alt="Alwafa Export"
                                                             width={130}
-                                                            height={55}
+                                                            height={45}
                                                             style={{ objectFit: "contain" }}
                                             /></Link>
                                     </div>
