@@ -236,6 +236,7 @@ Google Map One
 .google-map-one {
     position: relative;
     display: block;
+    margin-top: 14px;
     z-index: 0;
 }
 

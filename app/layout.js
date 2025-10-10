@@ -25,8 +25,8 @@ import 'swiper/css/free-mode'
 import { dmSans } from '@/lib/font'
 
 export const metadata = {
-  title: 'go transport',
-  description: 'Transport& logistic react next Js template',
+  title: 'ALWAFA Export Group',
+  description: 'Transport& logistic website',
 }
 
 export default function RootLayout({ children }) {

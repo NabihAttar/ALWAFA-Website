@@ -8,7 +8,7 @@ export default function Header1({ scroll, handlePopup, handleMobileMenu }) {
         <>
 
             {/*Start Main Header One*/}
-            <header className="main-header main-header-one"   style={{ backgroundColor: 'rgb(14, 19, 30)' }}>
+            <header className="main-header main-header-one" style={{ backgroundColor: 'rgb(14, 19, 30)' }}>
                 <nav className="main-menu">
                     <div className="main-menu__wrapper">
                         <div className="container">
@@ -62,10 +62,18 @@ export default function Header1({ scroll, handlePopup, handleMobileMenu }) {
                                     <div className="main-menu__wrapper-inner">
                                         <div className="main-header-one__bottom-inner" >
                                             <div className="main-header-one__bottom-left">
-                                                <div className="logo-box"  >
-                                                    <Link href="/" ><img src={fixImagePath("resources/headerLogo (2).png")}
-                                                        alt="" /></Link>
+                                                <div className="logo-box">
+                                                    <Link href="/">
+                                                        <img
+                                                            src={fixImagePath("alwafaExportLogo/alwafa export group 7.svg")}
+                                                            alt="Alwafa Export"
+                                                            width={117}
+                                                            height={45}
+                                                            style={{ objectFit: "contain" }}
+                                                        />
+                                                    </Link>
                                                 </div>
+
 
                                                 <div className="main-header-one__bottom-menu">
                                                     <div className="main-menu__main-menu-box">
@@ -99,16 +107,20 @@ export default function Header1({ scroll, handlePopup, handleMobileMenu }) {
             </header>
             {/*End Main Header One*/}
 
-            <div className={`stricky-header stricky-header--style1 stricked-menu main-menu ${scroll ? "stricky-fixed" : ""}`}   style={{ backgroundColor: 'rgb(14, 19, 30)' }}
->
+            <div className={`stricky-header stricky-header--style1 stricked-menu main-menu ${scroll ? "stricky-fixed" : ""}`} style={{ backgroundColor: 'rgb(14, 19, 30)' }}
+            >
                 <div className="sticky-header__content">
                     <div className="main-header-one__bottom">
                         <div className="main-menu__wrapper-inner">
                             <div className="main-header-one__bottom-inner">
                                 <div className="main-header-one__bottom-left">
                                     <div className="logo-box">
-                                        <Link href="/"><img src={fixImagePath("resources/headerLogo (2).png")}
-                                            alt="" /></Link>
+                                        <Link href="/"><img src={fixImagePath("alwafaExportLogo/alwafa export group 7.svg")}
+                                         alt="Alwafa Export"
+                                                            width={117}
+                                                            height={45}
+                                                            style={{ objectFit: "contain" }}
+                                            /></Link>
                                     </div>
 
                                     <div className="main-header-one__bottom-menu">

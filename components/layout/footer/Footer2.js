@@ -49,8 +49,12 @@ export default function Footer2() {
                             <div className="col-auto col-md-6 wow fadeInUp" data-wow-delay="100ms">
                                 <div className="footer-widget__single footer-one__about">
                                     <div className="footer-one__about-logo">
-                                        <Link href="/"><img src="assets/images/resources/footerlogo.png"
-                                                alt=""/></Link>
+                                        <Link href="/"><img src="assets/images/alwafaExportLogo/alwafa export group 4.svg"
+                                         alt="Alwafa Export"
+                                                            width={130}
+                                                            height={55}
+                                                            style={{ objectFit: "contain" }}
+                                            /></Link>
                                     </div>
                                     <p className="footer-one__about-text">GTT Go Transport and Transit provides seamless solutions to meet all your shipping and transportation needs.
 </p>

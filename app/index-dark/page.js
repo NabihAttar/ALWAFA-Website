@@ -25,16 +25,16 @@ export default function Home() {
                 <AboutHome2 /> */}
                 <Services />
                 {/* <Projects /> */}
-                <WhyChooseUs />
+               
                 {/* <Blog /> */}
                 {/* <Skills />
                 <Testimonial />
-                <Faq />
+                
                 <Cta />
                 <Funfacts />
                 <Team />
                 <Blog />
-                <Brands /> */}
+                <Brands /> */} <WhyChooseUs /><Faq />
             </Layout>
         </div>
     )
