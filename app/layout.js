@@ -25,7 +25,7 @@ import 'swiper/css/free-mode'
 import { dmSans } from '@/lib/font'
 
 export const metadata = {
-  title: 'Go-Transport',
+  title: 'Al-WAFA EXPORT GROUP',
   description: 'Transport& logistic website',
 }
 

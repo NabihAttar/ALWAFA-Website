@@ -45,7 +45,7 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
 
           <div className="logo-box" >
             <Link href="/" aria-label="logo image" onClick={handleNavClick}>
-              <img src={fixImagePath("resources/logo.png")} width="150" alt="Go Transport" />
+              <img src={fixImagePath("alwafaExportLogo/alwafa export group 4.svg")} width="150" alt="Go Transport" />
             </Link>
           </div>
 
@@ -114,14 +114,14 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
           <ul className="mobile-nav__contact list-unstyled">
             <li>
               <i className="fa fa-envelope" />
-              <Link href="mailto:gotransport@gmail.com" onClick={handleNavClick}>
-                gotransport@gmail.com
+              <Link href="mailto:alwafaexportgroup@gmail.com" onClick={handleNavClick}>
+                alwafaexportgroup@gmail.com
               </Link>
             </li>
             <li>
               <i className="fa fa-phone-alt" />
               <Link href="tel:+9613000000" onClick={handleNavClick}>
-                +961 3 000 000
+                +61 420 22 22 55
               </Link>
             </li>
           </ul>

@@ -24,7 +24,7 @@ export default function Header1({ scroll, handlePopup, handleMobileMenu }) {
                                                         </div>
 
                                                         <div className="text-box">
-                                                            <p><span>Talk to Us</span> <Link href="tel:+96181411411">+961 81 411 411</Link></p>
+                                                            <p><span>Talk to Us</span> <Link href="tel:+61 420 22 22 55">+61 420 22 22 55</Link></p>
                                                         </div>
                                                     </li>
 
@@ -34,7 +34,7 @@ export default function Header1({ scroll, handlePopup, handleMobileMenu }) {
                                                         </div>
 
                                                         <div className="text-box">
-                                                            <p><span>Mail Us</span> <Link href="mailto:gotransport@gmail.com">[gotransport@gmail.com]</Link>
+                                                            <p><span>Mail Us</span> <Link href="mailto:galwafaexportgroup@gmail.com">[alwafaexportgroup@gmail.com]</Link>
                                                             </p>
                                                         </div>
                                                     </li>
@@ -65,7 +65,7 @@ export default function Header1({ scroll, handlePopup, handleMobileMenu }) {
                                                 <div className="logo-box">
                                                     <Link href="/">
                                                         <img
-                                                            src={fixImagePath("alwafaExportLogo/Group (5).png")}
+                                                            src={fixImagePath("alwafaExportLogo/alwafa export group 7.svg")}
                                                             alt="Alwafa Export"
                                                             width={117}
                                                             height={45}
@@ -115,7 +115,7 @@ export default function Header1({ scroll, handlePopup, handleMobileMenu }) {
                             <div className="main-header-one__bottom-inner">
                                 <div className="main-header-one__bottom-left">
                                     <div className="logo-box">
-                                        <Link href="/"><img src={fixImagePath("alwafaExportLogo/Group (5).png")}
+                                        <Link href="/"><img src={fixImagePath("alwafaExportLogo/alwafa export group 7.svg")}
                                          alt="Alwafa Export"
                                                             width={117}
                                                             height={45}
