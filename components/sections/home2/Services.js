@@ -53,7 +53,7 @@ export default function Services() {
             <div className="text tg-element-title"><h4>Our Services</h4></div>
             <div className="icon"><span className="icon-plane2 float-bob-x3"></span></div>
           </div>
-          <h2 className="sec-title__title tg-element-title">Our Services at Glance</h2>
+          <h2 className="sec-title__title tg-element-title">We offer many services to progress!</h2>
         </div>
 
         <div className="services-grid">

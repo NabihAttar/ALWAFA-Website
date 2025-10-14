@@ -30,13 +30,18 @@ export default function Home() {
                 {/* <Blog /> */}
                 {/* <Skills />
                 <Testimonial />
-                <Faq />
+                
                 <Cta />
                 <Funfacts />
                 <Team />
                 <Blog />
                 <Brands /> */}
                 {/* <Testimonial /> */}
+
+<Funfacts />
+                {/* <Team /> */}
+                {/* <Blog /> */}
+<Faq />
             </Layout>
         </div>
     )

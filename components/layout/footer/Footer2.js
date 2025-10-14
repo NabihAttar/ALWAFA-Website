@@ -162,7 +162,7 @@ export default function Footer2() {
 
                         <div className="footer-one__bottom-inner">
                             <div className="footer-one__bottom-text">
-                                <p>© Copyright 2025 <Link href="/">Go Transport & Transit.</Link> </p>
+                                <p>© Copyright 2025 <Link href="/"> All rights reserved Alwafa Export Groupnsport & Transit.</Link> </p>
                             </div>
 
                             {/* <div className="footer-one__social-links">
