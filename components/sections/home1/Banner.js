@@ -138,7 +138,7 @@ Banner() {
               data-wow-duration="1500ms">
               <div className="banner-one__content-right-text">
                 <p>GTT– Go Transport and Transit is your go-to partner for reliable<br />
-                  logistics and trade solutions.</p>
+                  logistics and trade solutions</p>
               </div>
 
 
