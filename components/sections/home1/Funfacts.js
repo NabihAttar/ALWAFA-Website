@@ -63,7 +63,7 @@ export default function Funfacts() {
 
                                     <div className="content-box">
                                         <div className="count-text-box count-box">
-                                            <h3> <CounterUp end={20} /></h3>
+                                            <h3> <CounterUp end={18} /></h3>
                                             <span className="plus">+</span>
                                         </div>
                                         <div className="text-box">
