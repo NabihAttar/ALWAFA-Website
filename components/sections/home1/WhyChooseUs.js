@@ -23,21 +23,21 @@ export default function WhyChooseUs() {
                       <span className="icon-plane2 float-bob-x3"></span>
                     </div>
                   </div>
-                  <h2 className="sec-title__title tg-element-title">Our Core Value</h2>
+                  <h2 className="sec-title__title tg-element-title">Our Core Values</h2>
                 </div>
 
                 <div className="why-choose-one__content-list">
                   <ul>
-                    <li><p><span className="icon-plane2"></span> Confidentiality & Data Privacy</p></li>
-                    <li><p><span className="icon-plane2"></span> Cost-Conscious Operations</p></li>
-                    <li><p><span className="icon-plane2"></span> Integrity in Every Action</p></li>
-                    <li><p><span className="icon-plane2"></span> Accountability Through Experience</p></li>
+                    <li><p><span className="icon-plane2"></span> Direct-from-Factory Rates</p></li>
+                    <li><p><span className="icon-plane2"></span> Docs & Customs Done Right</p></li>
+                    <li><p><span className="icon-plane2"></span> On-Time, Transparent Shipping</p></li>
+                    <li><p><span className="icon-plane2"></span> One Team, End-to-End</p></li>
                   </ul>
                 </div>
 
                 <div className="btn-box">
                   <Link className="thm-btn" href="/contact">
-                    Contact Us
+                    Get A free Quote 
                     <i className="icon-right-arrow21"></i>
                     <span className="hover-btn hover-bx"></span>
                     <span className="hover-btn hover-bx2"></span>

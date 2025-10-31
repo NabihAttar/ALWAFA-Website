@@ -4,13 +4,13 @@ import Image from "next/image"
 
 
 const services = [
-  { title: "Air & Land Freight", subtitle: "(Import & Export)", icon: "assets/images/services-icon/air-land.svg"},
-  { title: "Customs Clearance", subtitle: "(Beirut Airport & Port)", icon: "assets/images/services-icon/catgo-insurance.svg" },
-  { title: "Consulting & Logistics", subtitle: "Outsourcing", icon: "assets/images/services-icon/consulting&logistics.svg" },
-  { title: "Door-to-Door", subtitle: "(D2D) Shipping", icon: "assets/images/services-icon/customs-clearance.svg" },
-  { title: "Cargo Insurance", subtitle: "Solutions", icon: "assets/images/services-icon/door-to-door.svg" },
-  { title: "Inland Trucking", subtitle: "(E2E)", icon: "assets/images/services-icon/inland-trucking.svg" },
-  { title: "Global Warehousing", subtitle: "", icon: "assets/images/services-icon/global-warehousing.svg" },
+  { title: "Factory-Direct Sourcing", subtitle: "Trusted factories", icon: "assets/images/services-icon/air-land.svg"},
+  { title: "Quality Inspection", subtitle: "AQL checks", icon: "assets/images/services-icon/catgo-insurance.svg" },
+  { title: "Docs & Customs", subtitle: "Express / economy", icon: "assets/images/services-icon/consulting&logistics.svg" },
+  { title: "Freight: Air • Sea • Land", subtitle: "(D2D) Shipping", icon: "assets/images/services-icon/customs-clearance.svg" },
+  { title: "Global Warehousing", subtitle: "Consolidate & store", icon: "assets/images/services-icon/door-to-door.svg" },
+  { title: "Door-to-Door (DAP/DDP)", subtitle: "Door delivery.", icon: "assets/images/services-icon/inland-trucking.svg" },
+  // { title: "Door-to-Door (DAP/DDP)", subtitle: "Door delivery", icon: "assets/images/services-icon/global-warehousing.svg" },
 ]
 // small helper: use <img> for svg, <Image> for others
 function ServiceIcon({ src, alt, priority }) {
@@ -53,7 +53,7 @@ export default function Services() {
             <div className="text tg-element-title"><h4>Our Services</h4></div>
             <div className="icon"><span className="icon-plane2 float-bob-x3"></span></div>
           </div>
-          <h2 className="sec-title__title tg-element-title">We offer many services to progress!</h2>
+          <h2 className="sec-title__title tg-element-title">End-to-End Export Services</h2>
         </div>
 
         <div className="services-grid">

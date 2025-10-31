@@ -25,25 +25,25 @@ export default function About2() {
                         </div>
                         <div className="col-xl-6 col-lg-6">
                             <div className="project-details__text2-content">
-                                <h2 style={{ color: "white" }}>Where We Operate</h2>
+                                <h2 style={{ color: "white" }}>We Ship Worldwide</h2>
                                 <p style={{ color: "rgb(143, 143, 143)" }}>
-                                    With headquarters near Rafic Hariri International Airport and warehousing hubs in different countries, GTT ensures smooth logistics across key international countries:
+                                   Al-Wafa Export Group manages exports from MENA to compliant destinations across the globe through partner networks at major ports and airports.
                                 </p>
                                 <ul>
                                     <li>
-                                        <p style={{ color: "rgb(143, 143, 143)" }}><span className="icon-arrow-right-circle"></span> China</p>
+                                        <p style={{ color: "rgb(143, 143, 143)" }}><span className="icon-arrow-right-circle"></span> Middle East & North Africa</p>
                                     </li>
                                     <li>
-                                        <p style={{ color: "rgb(143, 143, 143)" }}><span className="icon-arrow-right-circle"></span> Turkey</p>
+                                        <p style={{ color: "rgb(143, 143, 143)" }}><span className="icon-arrow-right-circle"></span> Europe</p>
                                     </li>
                                     <li>
-                                        <p style={{ color: "rgb(143, 143, 143)" }}><span className="icon-arrow-right-circle"></span> Dubai</p>
+                                        <p style={{ color: "rgb(143, 143, 143)" }}><span className="icon-arrow-right-circle"></span> Asia–Pacific</p>
                                     </li>
                                     <li>
-                                        <p style={{ color: "rgb(143, 143, 143)" }}><span className="icon-arrow-right-circle"></span> France</p>
+                                        <p style={{ color: "rgb(143, 143, 143)" }}><span className="icon-arrow-right-circle"></span> North & South America </p>
                                     </li>
                                     <li>
-                                        <p style={{ color: "rgb(143, 143, 143)" }}><span className="icon-arrow-right-circle"></span> Italy</p>
+                                        <p style={{ color: "rgb(143, 143, 143)" }}><span className="icon-arrow-right-circle"></span> Sub-Saharan & North Africa</p>
                                     </li>
                                 </ul>
                             </div>

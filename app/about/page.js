@@ -93,7 +93,7 @@ export default function Home() {
                                     </div>
 
                                     <div className="about-one__content-text1">
-                                        <p style={{ color: "rgb(143, 143, 143)" }}>Founded in 2015, Go Transport and Transit [SARL] is a Beirut-based logistics company with a global mindset. What started as a freight-forwarding initiative has grown into a fully integrated logistics ecosystem, connecting businesses to markets with precision and care.</p>
+                                        <p style={{ color: "rgb(143, 143, 143)" }}>Al-Wafa Export Group is a MENA-based export partner delivering end-to-end solutions from supplier to customer. We manage sourcing and product verification,  and multimodal freight air, sea, and land with predictable timelines and clear pricing.</p>
                                     </div>
 
                                     <div className="about-one__content-text2">
@@ -110,7 +110,7 @@ export default function Home() {
                                                         </div>
                                                     </div>
 
-                                                    <p style={{ color: "rgba(142, 142, 142)" }}>To guide your business through the complexities of global logistics with professional, confidential, and cost-effective solutions.</p>
+                                                    <p style={{ color: "rgba(142, 142, 142)" }}>To guide clients through export complexity with precise documentation, smart routing, and consistent service.</p>
                                                 </div>
                                             </div>
 
@@ -126,7 +126,7 @@ export default function Home() {
                                                         </div>
                                                     </div>
 
-                                                    <p style={{ color: "rgba(142, 142, 142)" }}>To be your trusted logistics partner worldwide — walking beside you with insight, integrity, and commitment to excellence.</p>
+                                                    <p style={{ color: "rgba(142, 142, 142)" }}>To set the standard for dependable exports from our region clear updates, fair pricing, and zero surprises.</p>
                                                 </div>
                                             </div>
                                         </div>

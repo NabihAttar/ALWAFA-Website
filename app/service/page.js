@@ -78,8 +78,8 @@ export default function Home() {
                                         </div>
 
                                         <div className="service-one__single-content" style={{ backgroundColor: 'rgb(15,28,37)', padding: '32px 24px' }}>
-                                            <h2 ><Link href="international-transport" style={{ color: '#fff' }}>Air & Land Freight </Link></h2>
-                                            <p style={{ color: 'rgb(142,142,142)' }}>Reliable logistics across major transportation networks. From urgent air shipments to coordinated ground deliveries, we move your cargo with efficiency and care.</p>
+                                            <h2 ><Link href="international-transport" style={{ color: '#fff' }}>Factory-Direct Sourcing</Link></h2>
+                                            <p style={{ color: 'rgb(142,142,142)' }}>Handpicked manufacturers matched to your specs, audited for quality, capacity, and export readiness.</p>
                                             {/* Read More button removed as requested */}
                                         </div>
                                     </div>
@@ -101,8 +101,8 @@ export default function Home() {
                                         </div>
 
                                         <div className="service-one__single-content" style={{ backgroundColor: 'rgb(15,28,37)', padding: '32px 24px' }}>
-                                            <h2 ><Link href="international-transport" style={{ color: '#fff' }}>Customs Clearance</Link></h2>
-                                            <p style={{ color: 'rgb(142,142,142)' }}>Swift, compliant clearance processes at Beirut's Airport and Port. Our in-house experts ensure smooth entry and exit with zero stress.</p>
+                                            <h2 ><Link href="international-transport" style={{ color: '#fff' }}>Quality Inspection</Link></h2>
+                                            <p style={{ color: 'rgb(142,142,142)' }}>Independent pre-shipment AQL inspections with measurements, defect classification, and photo/video evidence.</p>
                                             {/* Read More button removed from the seventh service card as requested */}
                                         </div>
                                     </div>
@@ -132,8 +132,8 @@ export default function Home() {
                                         </div>
 
                                         <div className="service-one__single-content" style={{ backgroundColor: 'rgb(15,28,37)', padding: '32px 24px' }}>
-                                            <h2 ><Link href="international-transport" style={{ color: '#fff' }}>Door-to-Door (D2D) Shipping</Link></h2>
-                                            <p style={{ color: 'rgb(142,142,142)' }}>From your supplier's floor to your customer's door — we manage the journey end-to-end. Transparent, trackable, and tailored to your needs.</p>
+                                            <h2 ><Link href="international-transport" style={{ color: '#fff' }}>Docs & Customs</Link></h2>
+                                            <p style={{ color: 'rgb(142,142,142)' }}>Accurate HS classification, Incoterms guidance, certificates of origin, and smooth clearance at origin and destination.</p>
                                             {/* Read More button removed from all service cards as requested */}
                                         </div>
                                     </div>
@@ -158,8 +158,8 @@ export default function Home() {
                                         </div>
 
                                         <div className="service-one__single-content" style={{ backgroundColor: 'rgb(15,28,37)', padding: '32px 24px' }}>
-                                            <h2 ><Link href="international-transport" style={{ color: '#fff' }}>Cargo Insurance</Link></h2>
-                                            <p style={{ color: 'rgb(142,142,142)' }}>We protect your cargo in transit, offering insurance plans that provide peace of mind against unexpected disruptions.</p>
+                                            <h2 ><Link href="international-transport" style={{ color: '#fff' }}>Freight: Air • Sea • Land</Link></h2>
+                                            <p style={{ color: 'rgb(142,142,142)' }}>Express or economy options with FCL/LCL planning, carrier selection, and routes optimized for time and cost.</p>
 
                                         </div>
                                     </div>
@@ -181,8 +181,8 @@ export default function Home() {
                                         </div>
 
                                         <div className="service-one__single-content" style={{ backgroundColor: 'rgb(15,28,37)', padding: '32px 24px' }}>
-                                            <h2 ><Link href="international-transport" style={{ color: '#fff' }}>Warehousing Solutions</Link></h2>
-                                            <p style={{ color: 'rgb(142,142,142)' }}>Secure, accessible storage across key logistics hubs. Our global warehouse network supports inventory control and efficient distribution.</p>
+                                            <h2 ><Link href="international-transport" style={{ color: '#fff' }}>Consolidation & Warehousing</Link></h2>
+                                            <p style={{ color: 'rgb(142,142,142)' }}>Merge multi-supplier orders, secure storage at logistics hubs, inventory control, and lower total landed cost.</p>
                                             {/* Read More button removed from all service cards as requested */}
                                         </div>
                                     </div>
@@ -204,8 +204,8 @@ export default function Home() {
                                         </div>
 
                                         <div className="service-one__single-content" style={{ backgroundColor: 'rgb(15,28,37)', padding: '32px 24px' }}>
-                                            <h2><Link href="international-transport" style={{ color: '#fff' }}>Inland Trucking</Link></h2>
-                                            <p style={{ color: 'rgb(142,142,142)' }}>Fast, flexible ground transport across Lebanon and beyond. We bridge the gap between ports, warehouses, and final destinations.</p>
+                                            <h2><Link href="international-transport" style={{ color: '#fff' }}>Door-to-Door (DAP/DDP)</Link></h2>
+                                            <p style={{ color: 'rgb(142,142,142)' }}>End-to-end pickup, customs processing, and final delivery where permitted, including duties/taxes handling on DDP lanes.</p>
                                             {/* <div className="btn-box">
                                         <Link href="international-transport">Read More <span
                                                 className="icon-right-arrow21"></span></Link>
@@ -229,7 +229,7 @@ export default function Home() {
                                 </div>
                             </div>
                             {/*End Service One Single*/}
-                            <div className="col-xl-4 col-lg-6 col-md-6 wow fadeInLeft" data-wow-delay="0ms"
+                            {/* <div className="col-xl-4 col-lg-6 col-md-6 wow fadeInLeft" data-wow-delay="0ms"
                                 data-wow-duration="1500ms">
                                 <div className="service-one__single">
                                     <div className="service-one__single-inner">
@@ -240,10 +240,10 @@ export default function Home() {
                                         <div className="service-one__single-content" style={{ backgroundColor: 'rgb(15,28,37)', padding: '32px 24px' }}>
                                             <h2><Link href="international-transport" style={{ color: '#fff' }}>Consulting & Logistics Outsourcing</Link></h2>
                                             <p style={{ color: 'rgb(142,142,142)' }}>From documentation to full-scale operations, we optimize your flow and reduce your costs.</p>
-                                            {/* <div className="btn-box">
+                                             <div className="btn-box">
                                         <Link href="international-transport">Read More <span
                                                 className="icon-right-arrow21"></span></Link>
-                                    </div> */}
+                                    </div> 
                                         </div>
                                     </div>
 
@@ -261,7 +261,7 @@ export default function Home() {
                                     </div>
 
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </section>

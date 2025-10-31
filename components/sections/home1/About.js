@@ -47,16 +47,13 @@ export default function About() {
                     </div>
                   </div>
                   <h2 className="sec-title__title tg-element-title">
-                    Building Bridges<br />Across Borders
+                  Your Factory-Direct <br />Export Partner
                   </h2>
                 </div>
 
                 <div className="about-one__content-text1">
                   <p>
-                    At GTT, logistics isn't just about moving goods, it's about building bridges across borders.
-                    We connect continents, empower commerce, and simplify international trade. <br />
-                    With a decade of experience and operations spanning Lebanon, Europe, Asia, and the Middle East,
-                    we offer the reliability of a global player with the agility of a local partner.
+                    Al-Wafa Export Group cuts out the middlemen to secure factory-direct prices and faster lead times. We manage the entire export journey, sourcing and quality checks, documentation and customs, and multimodal shipping by air, sea, and land, so your goods move from origin to destination without friction.
                   </p>
                 </div>
 

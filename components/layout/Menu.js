@@ -11,7 +11,7 @@ export default function Menu() {
 
             <ul className="main-menu__list">
                 <li className="dropdown">
-                    <Link href="index-dark">Home </Link>
+                    <Link href="/">Home </Link>
                     {/* <ul>
                         <li><Link href="/">Home One</Link></li>
                         <li><Link href="index2">Home Two</Link></li>

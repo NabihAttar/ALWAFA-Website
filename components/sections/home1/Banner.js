@@ -129,22 +129,21 @@ Banner() {
           <div className="banner-one__content">
             <div className="banner-one__content-left wow fadeInLeft" data-wow-delay="0ms"
               data-wow-duration="1500ms">
-              <h2 >Go Futher <br />
-                <span style={{ color: "rgba(137, 242, 255, 1)" }}>Go Global</span></h2>
+              <h2 >From Your Factory <br />
+                <span style={{ color: "rgba(137, 242, 255, 1)" }}>to the World</span></h2>
               {/* <p>Specialist In Modern <br /> Transportation </p> */}
             </div>
 
             <div className="banner-one__content-right wow fadeInRight" data-wow-delay="0ms"
               data-wow-duration="1500ms">
               <div className="banner-one__content-right-text">
-                <p>GTT– Go Transport and Transit is your go-to partner for reliable<br />
-                  logistics and trade solutions</p>
+                <p>We cut out the middle-man and get you the best prices that others simply can’t</p>
               </div>
 
 
 
               <div className="banner-one__content-right-btn">
-                <Link className="thm-btn" href="about">About Us
+                <Link className="thm-btn" href="contact">Start Your Shipment
                   <i className="icon-right-arrow21"></i>
                   <span className="hover-btn hover-bx"></span>
                   <span className="hover-btn hover-bx2"></span>

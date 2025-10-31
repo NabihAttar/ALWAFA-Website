@@ -42,63 +42,55 @@ export default function Faq() {
                                             <span className="icon-plane2 float-bob-x3"></span>
                                         </div>
                                     </div>
-                                    <h2 className="sec-title__title tg-element-title">Frequently Asked Have <br/>
-                                        Any <span>Question?</span> </h2>
+                                    <h2 className="sec-title__title tg-element-title"> Company’s <br/>
+                                        <span>FAQ</span> </h2>
                                 </div>
 
                                 <div className="accrodion-grp faq-one-accrodion" data-grp-name="faq-one-accrodion-1">
                                     <div className={isActive.key == 1 ? "accrodion active" : "accrodion"} onClick={() => handleToggle(1)}>
                                         <div className="accrodion-title">
-                                            <h4>How do you handle returns or exchanges?</h4>
+                                            <h4>How do you keep prices low?</h4>
                                         </div>
 
                                         <div className="accrodion-content">
                                             <div className="inner">
-                                                <p>We help businesses bring ideas to life in the digital world designing
-                                                    & implementing the technology tools that they need to win. We help
-                                                    business bring ideas to life in the digital wor</p>
+                                                <p>We source directly from manufacturers and consolidate shipments to reduce the total landed cost.</p>
                                             </div>
                                         </div>
                                     </div>
 
                                     <div className={isActive.key == 2 ? "accrodion active" : "accrodion"} onClick={() => handleToggle(2)}>
                                         <div className="accrodion-title">
-                                            <h4>What does business consulting do?</h4>
+                                            <h4>Which Incoterms do you support?</h4>
                                         </div>
 
                                         <div className="accrodion-content">
                                             <div className="inner">
-                                                <p>We help businesses bring ideas to life in the digital world designing
-                                                    & implementing the technology tools that they need to win. We help
-                                                    business bring ideas to life in the digital wor</p>
+                                                <p>EXW, FOB, CIF, DAP, and DDP where permitted by destination regulations.</p>
                                             </div>
                                         </div>
                                     </div>
 
                                     <div className={isActive.key == 3 ? "accrodion active" : "accrodion"} onClick={() => handleToggle(3)}>
                                         <div className="accrodion-title">
-                                            <h4>Can I cancel a shipment after it's been booked?</h4>
+                                            <h4>Do you handle customs clearance and documents?</h4>
                                         </div>
 
                                         <div className="accrodion-content">
                                             <div className="inner">
-                                                <p>We help businesses bring ideas to life in the digital world designing
-                                                    & implementing the technology tools that they need to win. We help
-                                                    business bring ideas to life in the digital wor</p>
+                                                <p>Yes HS codes, commercial invoice, packing list, certificate of origin, and product-specific certificates; we clear at origin and via partners at destination.</p>
                                             </div>
                                         </div>
                                     </div>
 
                                     <div className={isActive.key == 4 ? "accrodion active" : "accrodion"} onClick={() => handleToggle(4)}>
                                         <div className="accrodion-title">
-                                            <h4>Can you assist with customs clearance procedures?</h4>
+                                            <h4>What products can you export?</h4>
                                         </div>
 
                                         <div className="accrodion-content">
                                             <div className="inner">
-                                                <p>We help businesses bring ideas to life in the digital world designing
-                                                    & implementing the technology tools that they need to win. We help
-                                                    business bring ideas to life in the digital wor</p>
+                                                <p>Most general goods. We do not ship prohibited or highly restricted items (e.g., hazardous chemicals, counterfeit goods).</p>
                                             </div>
                                         </div>
                                     </div>

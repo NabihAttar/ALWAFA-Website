@@ -56,7 +56,7 @@ export default function Footer2() {
                                                         style={{ objectFit: "contain" }}
                                                     /></Link>
                                                 </div>
-                                                <p className="footer-one__about-text">GTT Go Transport and Transit provides seamless solutions to meet all your shipping and transportation needs.
+                                                <p className="footer-one__about-text">Al-Wafa Export Group is a factory-direct export partner. We source, inspect, prepare documents & customs, and ship worldwide by air, sea, and land end to end.
                                                 </p>
                                             </div>
                                         </div>
@@ -162,7 +162,7 @@ export default function Footer2() {
 
                         <div className="footer-one__bottom-inner">
                             <div className="footer-one__bottom-text">
-                                <p>© Copyright 2025 <Link href="/"> All rights reserved Alwafa Export Groupnsport & Transit.</Link> </p>
+                                <p>© Copyright 2025 <Link href="/"> All rights reserved Alwafa Export Group</Link> </p>
                             </div>
 
                             {/* <div className="footer-one__social-links">

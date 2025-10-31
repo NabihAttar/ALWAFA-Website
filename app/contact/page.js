@@ -30,13 +30,13 @@ export default function Home() {
                                                     <span className="icon-plane2 float-bob-x3"></span>
                                                 </div>
                                             </div>
-                                            <h2 className="sec-title__title tg-element-title"style={{ color: "white" }}>Let’s Move Your  <br /> Business Forward
+                                            <h2 className="sec-title__title tg-element-title"style={{ color: "white" }}>Let’s Start<br />Your Order
                                                 
                                             </h2>
                                         </div>
 
                                         <div className="contact-page__top-content-text1" style={{ color: "rgb(143, 143, 143)" }}>
-                                            <p>Our team is here to support you with reliable, responsive service. Whether you have a question, need a quote, or want to discuss your logistics needs, we’re ready to help.</p>
+                                            <p>Share a few shipment details and we’ll reply within one business day. For urgent requests, message us on WhatsApp.</p>
                                         </div>
 
                                         {/* <div className="social-links" >
@@ -130,7 +130,7 @@ export default function Home() {
                                         </div>
                                         <div className="content">
                                             <h2>Location</h2>
-                                            <p>Lebanon <br /> Airport Area, Lebanon</p>
+                                            <p>Syria St<br />Rushdy Alexandria Egypt</p>
                                         </div>
                                     </li>
 
