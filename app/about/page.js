@@ -9,7 +9,7 @@ import ReactCurvedText from 'react-curved-text'
 import { useState } from 'react'
 import ModalVideo from 'react-modal-video'
 import About2 from "../about2/page"
-
+import Testimonial from "@/components/sections/home1/Testimonial"
 const swiperOptions = {
     modules: [Autoplay, Pagination, Navigation],
     slidesPerView: 3,
@@ -177,7 +177,7 @@ export default function Home() {
 
                 </section>
                 <About2 />
-
+<Testimonial />
                 {/* <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="vfhzo499OeA" onClose={() => setOpen(false)} /> */}
             </Layout>
         </>

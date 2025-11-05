@@ -126,14 +126,14 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
             </li>
           </ul>
 
-          <div className="mobile-nav__top">
+          {/* <div className="mobile-nav__top">
             <div className="mobile-nav__social">
               <Link href="#" className="fab fa-twitter" onClick={handleNavClick} aria-label="Twitter" />
               <Link href="#" className="fab fa-facebook-square" onClick={handleNavClick} aria-label="Facebook" />
               <Link href="#" className="fab fa-pinterest-p" onClick={handleNavClick} aria-label="Pinterest" />
               <Link href="#" className="fab fa-instagram" onClick={handleNavClick} aria-label="Instagram" />
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

@@ -15,7 +15,7 @@ Cta One
     bottom: 0;
     right: 0;
     height: 200px;
-    background: var(--logistiq-gray-bg);
+    /* background: var(--logistiq-gray-bg); */
     content: "";
     z-index: -1;
 }

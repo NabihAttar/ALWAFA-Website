@@ -55,10 +55,10 @@ export default function Testimonial() {
         <>
 
         
-<section className="testimonial-one">
+<section className="testimonial-one" style={{ backgroundColor: "rgb(15,21,30)" }}>
             <div className="testimonial-one__pattern"
-                style={{ backgroundImage: 'url(assets/images/pattern/testimonial-v1-pattern.png)' }} ></div>
-            <div className="container">
+                 ></div>
+            <div className="container" >
                 <div className="row">
                     {/*Start Testimonial One Content*/}
                     <div className="col-xl-6">
@@ -69,14 +69,14 @@ export default function Testimonial() {
                             <div className="sec-title tg-heading-subheading animation-style2">
                                 <div className="sec-title__tagline">
                                     <div className="line"></div>
-                                    <div className="text tg-element-title">
-                                        <h4>Client Testimonial</h4>
+                                    <div className="text tg-element-title" >
+                                        <h4 style={{color : "white"}}>Client Testimonial</h4>
                                     </div>
                                     <div className="icon">
                                         <span className="icon-plane2 float-bob-x3"></span>
                                     </div>
                                 </div>
-                                <h2 className="sec-title__title tg-element-title">What Our Customers <br/>
+                                <h2 className="sec-title__title tg-element-title" style={{color : "white"}}>What Our Customers <br/>
                                     Say <span>About Us</span> </h2>
                             </div>
 
@@ -110,10 +110,7 @@ export default function Testimonial() {
                                             </div>
 
                                             <div className="text-box">
-                                                <p>A logistic service provider company plays a pivotal role in the global
-                                                    supply chain A logistic service provider companyA logistic service
-                                                    provider company plays a pivotal role in the global supply chain A
-                                                    logistic service provider company</p>
+                                                <p>Reliable, proactive, and transparent. They flagged risks early, kept us updated in real time, and delivered every shipment exactly when promised.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -146,10 +143,7 @@ export default function Testimonial() {
                                             </div>
 
                                             <div className="text-box">
-                                                <p>A logistic service provider company plays a pivotal role in the global
-                                                    supply chain A logistic service provider companyA logistic service
-                                                    provider company plays a pivotal role in the global supply chain A
-                                                    logistic service provider company</p>
+                                                <p>Our supply chain used to be chaos. Now it’s a timetable. Costs are clear, paperwork is handled, and deliveries arrive without surprises.</p>
                                             </div>
                                         </div>
                                     </div>                         
@@ -182,10 +176,7 @@ export default function Testimonial() {
                                             </div>
 
                                             <div className="text-box">
-                                                <p>A logistic service provider company plays a pivotal role in the global
-                                                    supply chain A logistic service provider companyA logistic service
-                                                    provider company plays a pivotal role in the global supply chain A
-                                                    logistic service provider company</p>
+                                                <p>Professional from day one, great pricing, honest timelines, and a team that actually picks up the phone.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -204,7 +195,7 @@ export default function Testimonial() {
                                 <img src="assets/images/testimonial/testimonial-v1-img2.jpg" alt=""/>
                             </div>
 
-                            <div className="testimonial-one__img-author">
+                            {/* <div className="testimonial-one__img-author">
                                 <ul>
                                     <li>
                                         <div className="img-box"><img src="assets/images/banner/banner-v1-img2.jpg" alt="#"/>
@@ -224,7 +215,7 @@ export default function Testimonial() {
                                     <h2>Customer Satisfied</h2>
                                     <p>4.8 (15k Reviews)</p>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                     {/*End Testimonial One Img*/}

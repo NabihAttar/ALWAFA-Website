@@ -3,7 +3,7 @@ import Link from "next/link"
 import Layout from "@/components/layout/Layout"
 import { Autoplay, Navigation, Pagination } from "swiper/modules"
 import { Swiper, SwiperSlide } from "swiper/react"
-
+import Cta from "@/components/sections/home1/Cta"
 const swiperOptions = {
     modules: [Autoplay, Pagination, Navigation],
     slidesPerView: 1,
@@ -262,8 +262,12 @@ export default function Home() {
 
                                 </div>
                             </div> */}
+                            <Cta />
                         </div>
+                        
                     </div>
+                    
+
                 </section>
                 {/*End Service One*/}
 
@@ -591,7 +595,6 @@ export default function Home() {
             </div>
         </section> */}
                 {/*End Testimonial One*/}
-
             </Layout>
         </>
     )

@@ -5,7 +5,7 @@ export default function Cta() {
     return (
         <>
           
-        <section className="cta-one">
+        <section className="cta-one" style={{marginTop: "150px"}}>
             <div className="container">
                 <div className="cta-one__inner">
                     <div className="cta-one__img wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms"><img
@@ -15,11 +15,10 @@ export default function Cta() {
                     <div className="shape2"><img src="assets/images/shapes/cta-v1-shape2.png" alt=""/></div>
                     <div className="shape3"><img src="assets/images/shapes/cta-v1-shape3.png" alt=""/></div>
                     <div className="cta-one__content">
-                        <h2>Recognized as One of The <br/> Leading <span>Company!</span></h2>
-                        <p>Logistic service provider company plays a pivotal <br/>
-                            role in the global supply chain ecosystem.</p>
+                        <h2>Ship Worldwide with <br/> <span> Al-Wafa</span></h2>
+                        <p>FCL or LCL, urgent air or economical sea, we build the right plan for your <br></br> timeline and budget, with optional cargo insurance and door-to-door <br></br> on eligible lanes (DAP/DDP where permitted).</p>
                         <div className="btn-box">
-                            <Link className="thm-btn" href="#">Book Your Parcel
+                            <Link className="thm-btn" href="/contact">Book Your Parcel
                                 <i className="icon-right-arrow21"></i>
                                 <span className="hover-btn hover-bx"></span>
                                 <span className="hover-btn hover-bx2"></span>

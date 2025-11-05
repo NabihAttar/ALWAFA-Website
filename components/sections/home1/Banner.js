@@ -53,9 +53,9 @@ Banner() {
           <img src="assets/images/shapes/Frame 17 (1).png" alt="#" />
         </div>
 
-        <div className="container">
+        {/* <div className="container">
           <div className="banner-one__location clearfix">
-            {/* Turkey */}
+           
             <div className="banner-one__location-single style1">
               <div className="round-box"><div className="bdr" /></div>
               <div className="content-box">
@@ -69,7 +69,7 @@ Banner() {
               </div>
             </div>
 
-            {/* China */}
+
             <div className="banner-one__location-single style2">
               <div className="round-box"><div className="bdr" /></div>
               <div className="content-box">
@@ -83,7 +83,7 @@ Banner() {
               </div>
             </div>
 
-            {/* France */}
+           
             <div className="banner-one__location-single style3">
               <div className="round-box"><div className="bdr" /></div>
               <div className="content-box">
@@ -97,7 +97,7 @@ Banner() {
               </div>
             </div>
 
-            {/* Italy */}
+           
             <div className="banner-one__location-single style4">
               <div className="round-box"><div className="bdr" /></div>
               <div className="content-box">
@@ -111,7 +111,7 @@ Banner() {
               </div>
             </div>
 
-            {/* Dubai */}
+            
             <div className="banner-one__location-single style5">
               <div className="round-box"><div className="bdr" /></div>
               <div className="content-box">
@@ -131,7 +131,7 @@ Banner() {
               data-wow-duration="1500ms">
               <h2 >From Your Factory <br />
                 <span style={{ color: "rgba(137, 242, 255, 1)" }}>to the World</span></h2>
-              {/* <p>Specialist In Modern <br /> Transportation </p> */}
+              <p>Specialist In Modern <br /> Transportation </p> 
             </div>
 
             <div className="banner-one__content-right wow fadeInRight" data-wow-delay="0ms"
@@ -153,7 +153,7 @@ Banner() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
     </>
   )
