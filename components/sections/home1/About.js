@@ -18,12 +18,12 @@ export default function About() {
                   <img src="assets/images/shapes/points.png" alt="" />
                 </div>
                 <div className="about-one__img1 reveal">
-                  <img src="assets/images/about/about-img1.png" alt="" />
+                  <img src="assets/images/alwafaExportLogo/ananas.png" alt="" />
                 </div>
 
                 <div className="about-one__img2">
                   <div className="about-one__img2-inner reveal">
-                    <img src="assets/images/about/about-img2.png" alt="" />
+                    <img src="assets/images/alwafaExportLogo/avoca.png" alt="" />
                   </div>
 
                   <div className="shape3 float-bob-y">

@@ -156,12 +156,12 @@ export default function Home() {
                                     <div className="shape2 float-bob-y"><img src={fixImagePath("shapes/points.png")} alt="" />
                                     </div>
                                     <div className="about-one__img1 reveal">
-                                        <img src={fixImagePath("about/WhyChooseUs2.png")} alt="" />
+                                        <img src={fixImagePath("alwafaExportLogo/orange.png")} alt="" />
                                     </div>
 
                                     <div className="about-one__img2">
                                         <div className="about-one__img2-inner reveal">
-                                            <img src={fixImagePath("about/WhyChooseUs1.png")} alt="" />
+                                            <img src={fixImagePath("alwafaExportLogo/strawberry.png")} alt="" />
                                         </div>
 
                                         <div className="shape3 float-bob-y">

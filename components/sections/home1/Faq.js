@@ -104,16 +104,16 @@ export default function Faq() {
                         <div className="col-xl-6">
                             <div className="faq-one__img">
                                 <div className="faq-one__img-box">
-                                    <img src="assets/images/resources/faq-v1-img1.jpg" alt="" />
+                                    <img src="assets/images/alwafaExportLogo/cement.png" alt="" />
 
-                                    <div className="faq-one__video-link">
+                                    {/* <div className="faq-one__video-link">
                                         <a onClick={() => setOpen(true)} className="video-popup">
                                             <div className="faq-one__video-icon">
                                                 <span className="icon-video"></span>
                                                 <i className="ripple"></i>
                                             </div>
                                         </a>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         </div>

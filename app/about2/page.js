@@ -16,7 +16,7 @@ export default function About2() {
                                     <img src={fixImagePath("project/project-details-img2.jpg")} alt="" />
                                     <div className="project-details__video-link">
                                         <img
-                                            src={fixImagePath("project/about.png")}
+                                            src={fixImagePath("alwafaExportLogo/WorldWide.jpg")}
                                             alt="Project details"
                                         />
                                     </div>

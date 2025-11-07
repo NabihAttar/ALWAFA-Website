@@ -95,7 +95,7 @@ export default function Testimonial() {
                                                     <img src="assets/images/testimonial/testimonial-v1-img1.png" alt=""/>
                                                 </div>
                                                 <div className="author-info">
-                                                    <h2>Ronald Richards</h2>
+                                                    <h2>Thomas Bernard</h2>
                                                     <div className="bottom-text">
                                                         <p>MANAGER</p>
                                                         <div className="rating-box">
@@ -128,7 +128,7 @@ export default function Testimonial() {
                                                     <img src="assets/images/testimonial/testimonial-v1-img1.png" alt=""/>
                                                 </div>
                                                 <div className="author-info">
-                                                    <h2>Ronald Richards</h2>
+                                                    <h2>Ahmad  El Sherif</h2>
                                                     <div className="bottom-text">
                                                         <p>MANAGER</p>
                                                         <div className="rating-box">
@@ -192,7 +192,7 @@ export default function Testimonial() {
                     <div className="col-xl-6">
                         <div className="testimonial-one__img">
                             <div className="testimonial-one__img1 reveal">
-                                <img src="assets/images/testimonial/testimonial-v1-img2.jpg" alt=""/>
+                                <img src="assets/images/alwafaExportLogo/delivery-men.jpg" alt=""/>
                             </div>
 
                             {/* <div className="testimonial-one__img-author">

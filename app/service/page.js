@@ -74,7 +74,7 @@ export default function Home() {
                                 <div className="service-one__single">
                                     <div className="service-one__single-inner">
                                         <div className="service-one__single-img">
-                                            <img src="assets/images/services/air land frieght.png" alt="#" />
+                                            <img src="assets/images/alwafaExportLogo/Artboard 6.png" alt="#" />
                                         </div>
 
                                         <div className="service-one__single-content" style={{ backgroundColor: 'rgb(15,28,37)', padding: '32px 24px' }}>
@@ -97,7 +97,7 @@ export default function Home() {
                                 <div className="service-one__single">
                                     <div className="service-one__single-inner">
                                         <div className="service-one__single-img">
-                                            <img src="assets/images/services/custom clearance.png" alt="#" />
+                                            <img src="assets/images/alwafaExportLogo/Artboard 1 (4).png" alt="#" />
                                         </div>
 
                                         <div className="service-one__single-content" style={{ backgroundColor: 'rgb(15,28,37)', padding: '32px 24px' }}>
@@ -128,7 +128,7 @@ export default function Home() {
                                 <div className="service-one__single">
                                     <div className="service-one__single-inner">
                                         <div className="service-one__single-img">
-                                            <img src="assets/images/services/door to door.png" alt="#" />
+                                            <img src="assets/images/alwafaExportLogo/Artboard 2.png" alt="#" />
                                         </div>
 
                                         <div className="service-one__single-content" style={{ backgroundColor: 'rgb(15,28,37)', padding: '32px 24px' }}>
@@ -154,7 +154,7 @@ export default function Home() {
                                 <div className="service-one__single">
                                     <div className="service-one__single-inner">
                                         <div className="service-one__single-img">
-                                            <img src="assets/images/services/cargo insurance.png" alt="#" />
+                                            <img src="assets/images/alwafaExportLogo/Artboard 3.png" alt="#" />
                                         </div>
 
                                         <div className="service-one__single-content" style={{ backgroundColor: 'rgb(15,28,37)', padding: '32px 24px' }}>
@@ -177,7 +177,7 @@ export default function Home() {
                                 <div className="service-one__single">
                                     <div className="service-one__single-inner">
                                         <div className="service-one__single-img">
-                                            <img src="assets/images/services/warehousing solution.png" alt="#" />
+                                            <img src="assets/images/alwafaExportLogo/Artboard 4.png" alt="#" />
                                         </div>
 
                                         <div className="service-one__single-content" style={{ backgroundColor: 'rgb(15,28,37)', padding: '32px 24px' }}>
@@ -200,7 +200,7 @@ export default function Home() {
                                 <div className="service-one__single">
                                     <div className="service-one__single-inner">
                                         <div className="service-one__single-img">
-                                            <img src="assets/images/services/inland trucking.png" alt="#" />
+                                            <img src="assets/images/alwafaExportLogo/Artboard 5.png" alt="#" />
                                         </div>
 
                                         <div className="service-one__single-content" style={{ backgroundColor: 'rgb(15,28,37)', padding: '32px 24px' }}>
@@ -595,6 +595,7 @@ export default function Home() {
             </div>
         </section> */}
                 {/*End Testimonial One*/}
+                
             </Layout>
         </>
     )

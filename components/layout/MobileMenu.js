@@ -53,7 +53,7 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
             <div className="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
               <ul className="main-menu__list">
                 <li className={isActive.key === 1 ? 'dropdown current' : 'dropdown'}>
-                  <Link href="/index-dark" onClick={handleNavClick}>Home</Link>
+                  <Link href="/" onClick={handleNavClick}>Home</Link>
                   {/* 
                   <ul style={{ display: isActive.key === 1 ? 'block' : 'none' }}>
                     <li><Link href="/" onClick={handleNavClick}>Home One</Link></li>
