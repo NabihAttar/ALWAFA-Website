@@ -59,7 +59,7 @@ export default function WhyChooseUs() {
                 </div>
                 <div className="about-one__img2">
                   <div className="about-one__img2-inner reveal">
-                    <img src="assets/images/alwafaExportLogo/basal.png" alt="" />
+                    <img src="assets/images/alwafaExportLogo/onions_196x246.jpg" alt="" />
                   </div>
                   <div className="shape3 float-bob-y">
                     <img src="assets/images/shapes/airplane-up-about.png" alt="" />
