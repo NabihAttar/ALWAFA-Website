@@ -154,6 +154,33 @@ Banner() {
             </div>
           </div>
         </div> */}
+       <div className="banner-one__content">
+            <div className="banner-one__content-left wow fadeInLeft" data-wow-delay="0ms"
+              data-wow-duration="1500ms">
+              <h2 > From Your Factory  <br />
+                <span style={{ color: "rgba(137, 242, 255, 1)" }}>to the World</span></h2>
+              {/* <p>Specialist In Modern <br /> Transportation </p> */}
+            </div>
+
+            <div className="banner-one__content-right wow fadeInRight" data-wow-delay="0ms"
+              data-wow-duration="1500ms">
+              <div className="banner-one__content-right-text">
+                <p>we cut out the middle-man and get you the best prices <br></br>that others simply can’t</p>
+              </div>
+
+
+
+              <div className="banner-one__content-right-btn">
+                <Link className="thm-btn" href="about">About Us
+                  <i className="icon-right-arrow21"></i>
+                  <span className="hover-btn hover-bx"></span>
+                  <span className="hover-btn hover-bx2"></span>
+                  <span className="hover-btn hover-bx3"></span>
+                  <span className="hover-btn hover-bx4"></span>
+                </Link>
+              </div>
+            </div>
+          </div>
       </section>
     </>
   )

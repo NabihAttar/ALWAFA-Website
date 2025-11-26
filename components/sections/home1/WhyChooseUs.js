@@ -55,12 +55,12 @@ export default function WhyChooseUs() {
                   <img src="assets/images/shapes/points.png" alt="" />
                 </div>
                 <div className="about-one__img1 reveal">
-                  <img src="assets/images/alwafaExportLogo/Artboard 1 (3).png" alt="" />
+                  <img src="assets/images/alwafaExportLogo/one.jpg" alt="" />
                 </div>
                 <div className="about-one__img2">
-                  <div className="about-one__img2-inner reveal">
+                  {/* <div className="about-one__img2-inner reveal">
                     <img src="assets/images/alwafaExportLogo/onions_196x246.jpg" alt="" />
-                  </div>
+                  </div> */}
                   <div className="shape3 float-bob-y">
                     <img src="assets/images/shapes/airplane-up-about.png" alt="" />
                   </div>
