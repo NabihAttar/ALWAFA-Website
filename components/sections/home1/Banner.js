@@ -53,7 +53,7 @@ Banner() {
           <img src="assets/images/shapes/Frame 17 (1).png" alt="#" />
         </div>
 
-        {/* <div className="container">
+        <div className="container">
           <div className="banner-one__location clearfix">
            
             <div className="banner-one__location-single style1">
@@ -119,8 +119,8 @@ Banner() {
                   <img src="assets/images/flags/dubai.png" alt="UAE flag" />
                 </div>
                 <div className="text-box">
-                  <h4>Dubai</h4>
-                  <p>Dubai</p>
+                  <h4>Asia</h4>
+                  <p>Asia</p>
                 </div>
               </div>
             </div>
@@ -131,7 +131,7 @@ Banner() {
               data-wow-duration="1500ms">
               <h2 >From Your Factory <br />
                 <span style={{ color: "rgba(137, 242, 255, 1)" }}>to the World</span></h2>
-              <p>Specialist In Modern <br /> Transportation </p> 
+              {/* <p>Specialist In Modern <br /> Transportation </p>  */}
             </div>
 
             <div className="banner-one__content-right wow fadeInRight" data-wow-delay="0ms"
@@ -153,13 +153,13 @@ Banner() {
               </div>
             </div>
           </div>
-        </div> */}
-       <div className="banner-one__content">
+        </div>
+       {/* <div className="banner-one__content">
             <div className="banner-one__content-left wow fadeInLeft" data-wow-delay="0ms"
               data-wow-duration="1500ms">
               <h2 > From Your Factory  <br />
                 <span style={{ color: "rgba(137, 242, 255, 1)" }}>to the World</span></h2>
-              {/* <p>Specialist In Modern <br /> Transportation </p> */}
+               <p>Specialist In Modern <br /> Transportation </p> 
             </div>
 
             <div className="banner-one__content-right wow fadeInRight" data-wow-delay="0ms"
@@ -180,7 +180,7 @@ Banner() {
                 </Link>
               </div>
             </div>
-          </div>
+          </div> */}
       </section>
     </>
   )

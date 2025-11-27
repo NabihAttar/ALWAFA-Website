@@ -55,7 +55,7 @@ export default function WhyChooseUs() {
                   <img src="assets/images/shapes/points.png" alt="" />
                 </div>
                 <div className="about-one__img1 reveal">
-                  <img src="assets/images/alwafaExportLogo/one.jpg" alt="" />
+                  <img src="assets/images/alwafaExportLogo/export1.jpg" alt="" />
                 </div>
                 <div className="about-one__img2">
                   {/* <div className="about-one__img2-inner reveal">
