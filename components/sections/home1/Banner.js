@@ -54,7 +54,7 @@ Banner() {
         </div>
 
         <div className="container">
-          <div className="banner-one__location clearfix">
+          {/* <div className="banner-one__location clearfix">
            
             <div className="banner-one__location-single style1">
               <div className="round-box"><div className="bdr" /></div>
@@ -124,7 +124,7 @@ Banner() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div className="banner-one__content">
             <div className="banner-one__content-left wow fadeInLeft" data-wow-delay="0ms"
