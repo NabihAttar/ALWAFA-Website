@@ -30,8 +30,8 @@ export default function Home() {
                                                     <span className="icon-plane2 float-bob-x3"></span>
                                                 </div>
                                             </div>
-                                            <h2 className="sec-title__title tg-element-title"style={{ color: "white" }}>Let’s Start<br />Your Order
-                                                
+                                            <h2 className="sec-title__title tg-element-title" style={{ color: "white" }}>Let’s Start<br />Your Order
+
                                             </h2>
                                         </div>
 
@@ -180,10 +180,13 @@ export default function Home() {
                 {/*Start Google Map One*/}
                 <section className="google-map-one">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6391.893!2d35.5018!3d33.8938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2slb!4v1710000000000"
-                        className="google-map-one__map">
-                    </iframe>
+                        src="https://maps.google.com/maps?q=Alexandria%2C%20Egypt&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                        className="google-map-one__map"
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                    />
                 </section>
+
                 {/*End Google Map One*/}
 
             </Layout>

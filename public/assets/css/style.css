@@ -6101,12 +6101,21 @@ Main Header Three
 
 }
 .services-grid {
-  display: flex;
-  flex-wrap: wrap;          /* allows multiple rows */
-  justify-content: center;  /* centers each row */
-  gap: 70px;                /* gap between cards horizontally and vertically */
-  margin-top: 70px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr)); /* 3 per row */
+  column-gap: 24px;   /* space between cards horizontally */
+  row-gap: 48px;      /* bigger gap between first and second row */
+  justify-items: center;  /* center each card in its grid cell */
+  max-width: 1100px;      /* optional: to keep grid narrower */
+  margin: 0 auto;         /* center the whole grid in the page */
 }
+
+.service-card {
+  text-align: center;
+  padding: 1.5rem;
+  /* optional: add shadow/border/etc. */
+}
+
 
 .service-card {
   background: #10151f;
@@ -6964,3 +6973,10 @@ background: #364153 !important;
 .tp-label strong{ display:block; color:#fff; font-weight:600; }
 
 
+/* Tablet: adjust breakpoints to match your project */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .main-header-one__bottom-menu {
+    margin-left: 0;
+    margin-right: auto;  /* pushes it to the left in a flex row */
+  }
+}

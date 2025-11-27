@@ -9,7 +9,7 @@ export default function Cta() {
                 <div className="container">
                     <div className="cta-one__inner">
                         <div className="cta-one__img wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms"><img
-                            src="assets/images/resources/cta-v1-img1.png" alt="" /></div>
+                            src="assets/images/alwafaExportLogo/five.jpg" alt="" /></div>
                         <div className="cta-one__pattern"><img src="assets/images/pattern/cta-v1-pattern.png" alt="" /></div>
                         <div className="shape1 float-bob-x"><img src="assets/images/shapes/cta-v1-shape1.png" alt="" /></div>
                         <div className="shape2"><img src="assets/images/shapes/cta-v1-shape2.png" alt="" /></div>
